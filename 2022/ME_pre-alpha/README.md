@@ -1,0 +1,1 @@
+this is the evolution of the first project from 2021, three versions of the same project, the code follow bad practices, but tends to be better over time.

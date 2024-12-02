@@ -1,0 +1,78 @@
+html {
+	overflow-y: auto;
+}
+
+#search-box {
+	width: 100%;
+	height: 8vh;
+	background: #222;
+	display: flex;
+	justify-content: center;
+}
+#search {
+	align-self: center;
+	flex-basis: 30%;
+	height: 50%;
+	font-size: 1.5em;
+	color: red;
+}
+.list {
+	height: 100%;
+	min-height: 89vh;
+	width: 100%;
+	background: #333;
+	margin-top: .5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+.list div {
+	display: inherit;
+	flex-basis: 24%;
+	margin: 5px;
+	background: #111;
+	height: 8vh;
+	justify-content: space-around;
+}
+.player-box .state{
+	height: 35px;
+	flex-basis: 15px;
+	background: #fff;
+	border-radius: 15px;
+	align-self: center;
+}
+.player-box .name {
+	height: 80%;
+	align-self: center;
+	flex-basis: 60%;
+	background: #555;
+	font-size: 1.5em;
+	text-align: center;
+	line-height: 1.7;
+	color: white;
+	overflow: hidden;
+}
+.player-box .n-war {
+	flex-basis: 10%;
+	align-self: center;
+	height: 80%;
+	background: #fff;
+	font-size: 1.5em;
+	text-align: center;
+	line-height: 1.9;
+	user-select: none;
+}
+.player-box button {
+	flex-basis: 5%;
+	height: 80%;
+	background: #555;
+	align-self: center;
+}
+.player-box .add {
+	background: green;
+}
+.player-box .sub {
+	background: red;
+}

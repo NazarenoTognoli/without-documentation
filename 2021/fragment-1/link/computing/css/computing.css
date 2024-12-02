@@ -1,0 +1,469 @@
+
+body{
+    background-color: rgb(10, 11, 10);
+    position: absolute;
+    filter: brightness(100%);
+    overflow-y: hidden;
+}
+
+/*STARTINGBOX*/
+.starting-box {
+    width: 100vw;
+    height: 5em;
+    font-size: 18px;
+    position: relative;
+    /*background-color: rgb(0,0,0);*/
+    background-image: url(/link/computing/recursos/images/industrialdark3.jpg);
+    background-size: cover;
+    /*background:linear-gradient(to top,rgb(37,37,43),rgb(17, 17, 23),rgb(0,0,15));*/
+}
+.starting-box__ul {
+    padding: 20px 20px;
+    color:rgba(255, 255, 255, 0.1);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.starting-box__li {
+    padding: 0 65px;
+    text-decoration: none;
+    display: flex;
+}
+a:visited {
+    color:rgb(41, 147, 147);
+}
+a:link {
+    color:rgb(43, 221, 43)
+}
+a:hover {
+    color: rgb(108, 107, 107);
+}
+
+/*BOXOFBOXES*/
+.boxofboxes {
+    width: 100vw;
+    display: flex;
+    border-bottom: 5px solid rgb(14,15,14) ;
+    border-top: 5px solid rgb(14,15,14) ;
+    /*justify-content: space-around;*/
+}
+.box-title {
+    display: flex;
+    font-size: 2.9em;
+    /*width: 15%;*/
+    width: 80px;
+    height: 100%;
+    /*background-color: aqua;*/
+    text-align: center;
+    /*animation: rainbow-background 20s infinite;*/
+    /*color: rgba(41, 147,147);*/
+    /*border: 2px solid rgb(6, 6, 6);*/
+    /*font-family: 'BhuTuka Expanded One', cursive;*/
+    /*background:linear-gradient(to left, rgb(0,0,15),rgb(8,8,13), rgb(0,0,15));*/
+    background-color: rgb(0, 0, 0);
+    border-right: 5px solid rgb(14,15,14);
+    line-height: 1.1;
+    flex-direction: column;
+    font-family: 'Play';
+    font-weight: 100;
+    padding-bottom: 20px;
+    animation: color-letter 0.01s infinite;
+}
+.box-title b {
+    filter: brightness(150%);
+}
+.box-content {
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-content:flex-start;
+    flex-wrap:nowrap;
+    /*background-color: aquamarine;*/
+    background:linear-gradient(to left, rgb(0,0,0)0%,rgb(22, 22, 22)35%, rgb(0,0,0) 50%,rgb(23, 23, 31)65%,rgb(0,0,0)100%);
+    
+
+}
+.box-content-left, .box-content-right {
+    display: flex;
+    justify-content: center;
+    align-content:flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+}
+.fa {
+    width: 75%;
+    height: 8%;
+    /*margin: 25px 10%;*/
+    /*outline: 1px solid rgb(0, 122, 46);*/
+    color: rgb(0, 162, 86);
+    padding: 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    /*border-bottom: 5px solid rgb(106, 106, 106);*/
+    animation: color-bottom 0.01s infinite;
+    /*border-bottom: 3px solid #00ff00;*/
+    display: flex;
+    flex-direction:row;
+    text-decoration: none;
+    margin-top: 4%;
+    font-size: 70%;
+    box-sizing: border-box;
+    align-items: center;
+    align-content: center;
+}
+.fa:hover {
+    outline: 1px solid #fff;
+    filter: opacity(.5);
+}
+.box-content-left a {
+    height: 140px;
+    animation: color-bottom 0.01s infinite;
+}
+.box-content-right a {
+    height: 140px;
+}
+.web-dev {
+    background-image:url(/link/computing/recursos/images/web-dev.jpg);
+    background-size: cover;
+}
+.informatic-security {
+    background-image:url(/link/computing/recursos/images/red.jpg);
+    background-size: cover;
+}
+.programming {
+    background-image:url(/link/computing/recursos/images/green.jpg);
+    background-size: cover;
+    margin-top: 5px;
+}
+.mobile {
+    background-image:url(/link/computing/recursos/images/mobilepic.jpg);
+    background-size: cover;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.database {
+    background-image: url(/link/computing/recursos/images/database.jpg);
+    background-size: cover;
+    margin-top: 5px;
+}
+.ai {
+    background-image: url(/link/computing/recursos/images/aiblack.jpg);
+    background-size:cover;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.web-dev, .informatic-security, .mobile, .ai {
+    margin: 20px 1vw;
+}
+.programming, .mobile, .database, .ai {
+    margin-top: 2vh;
+}
+.web-dev, .informatic-security {
+    margin-bottom: 0;
+}
+.web-dev:hover, .programming:hover, .mobile:hover, .informatic-security:hover, .database:hover, .ai:hover {
+    transform: translate(-7px);
+}
+.chi {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    /*clip-path:polygon( 0% 30%,0% 70%,100% 70%, 0%,70%,);*/
+    margin: 0;
+    animation: move-ball--2 2s infinite;
+    font-family:'Play';
+    /*color: white;*/
+    font-size: 2.5vw;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+}
+.web-dev-title {
+    padding-top: 1.8%;
+    height: auto;
+    width: 40vw;
+    color: rgb(255, 255, 255,.5);
+    font-size: 3.5vw;
+}
+.informatic-security-title {
+    height: 100%;
+    width: 40vw;
+    font-size: 3.5vw;
+    
+    color: rgba(255, 0, 0, 0.611);
+    text-shadow: 1px 1px rgb(255, 255, 255);
+
+}
+.programming-title {
+    padding-top: 1.8%;
+    height: 100%;
+    color:#04910492;
+    font-size: 3.5vw;
+    width: 40vw;
+}
+.mobile-title {
+    padding-top: 4%;
+    font-size: 3.5vw;
+    height: 100%;
+    color: rgb(0, 255, 208,.6);
+    width: 40vw;
+    font-weight: 600;
+}
+.database-title {
+    height: 100%;
+    font-size: 3.5vw;
+    padding-top:1.8%;
+    color: rgb(45, 201, 244,.6);
+    width: 40vw;
+}
+.ai-title {
+    height: 100%;
+    font-size: 4vw;
+    padding-top: 4%;
+    color: rgba(255, 102, 0, 0.76);
+    font-weight: 600;
+    width: 40vw;
+    text-shadow: 0 1px rgb(4, 0, 255);
+}
+.chi {
+    height: 0;
+}
+.text {
+    font-family:monospace;
+}
+/*ENDINGBOX*/
+.ending-box {
+    width: 100vw;
+    height: 7em;
+    /*background:linear-gradient(to top,black 5%,rgb(0,0,15) 40%,rgb(37,37,43)95%);*/
+    /*background-color: rgb(0, 0, 0);*/
+    background-image: url(/link/computing/recursos/images/industrialdark3.jpg);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    padding-bottom: 20px;
+    padding: 20px 90px;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 0;
+    margin: 0;
+    font-family:monospace;
+    animation: color-letter .01s infinite;
+    padding: 10px;
+}
+.ending-box p {
+    padding: 4px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*KEYFRAMES*/
+/*@keyframes move-ball {
+    0% { clip-path: circle(105px at -100% 50%);}
+    2.5%{clip-path: circle(110px at -90% 50%);}
+    5%{clip-path: circle(100px at -80% 50%);}
+    7.5%{clip-path: circle(110px at -70% 50%);}
+    10%{clip-path: circle(105px at -60% 50%);}
+    12.5%{clip-path: circle(110px at -50% 50%);}
+    15% { clip-path: circle(100px at -40% 50%);}
+    17.5%{clip-path: circle(110px at -30% 50%);}
+    20%{clip-path: circle(105px at -10% 50%);}
+
+    22.5%{clip-path: circle(110px at 10% 50%);}
+    25%{clip-path: circle(100px at 15% 50%);}
+    27.5%{clip-path: circle(110px at 20% 50%);}
+    30% { clip-path: circle(105px at 25% 50%);}
+    32.5%{clip-path: circle(110px at 30% 50%);}
+    35%{clip-path: circle(100px at 35%);}
+    37.5%{clip-path: circle(110px at 40% 50%);}
+    40%{clip-path: circle(105px at 45% 50%);}
+
+    42.5%{clip-path: circle(110px at 46% 50%);}
+    45% { clip-path: circle(100px at 47% 50%);}
+    47.5%{clip-path: circle(110px at 48% 50%);}
+    50%{clip-path: circle(105px at 49% 50%);}
+    50% { clip-path: circle(105px at 50% 50%);}
+    52.5%{clip-path: circle(110px at 48% 50%);}
+    55%{clip-path: circle(100px at 47% 50%);}
+    57.5%{clip-path: circle(110px at 46% 50%);}
+
+    60%{clip-path: circle(105px at 45% 50%);}
+    62.5%{clip-path: circle(110px at 50% 50%);}
+    65% { clip-path: circle(100px at 65% 50%);}
+    67.5%{clip-path: circle(110px at 60% 50%);}
+    70%{clip-path: circle(105px at 70% 50%);}
+    72.5%{clip-path: circle(110px at 80% 50%);}
+    75%{clip-path: circle(100px at 90% 50%);}
+    77.5%{clip-path: circle(110px at 100% 50%);}
+
+    80% { clip-path: circle(105px at 130% 50%);}
+    82.5%{clip-path: circle(110px at 140% 50%);}
+    85%{clip-path: circle(100px at 150% 50%);}
+    87.5%{clip-path: circle(110px at 170% 50%);}
+    90%{clip-path: circle(105px at 190% 50%);}
+    92.5%{clip-path: circle(110px at 200% 50%);}
+    95% { clip-path: circle(100px at 270% 50%);}
+    97.5%{clip-path: circle(110px at 290% 50%);}
+    100%{clip-path: circle(105px at 200% 50%);}
+}*/
+@keyframes move-ball {
+    0% { clip-path: circle(105px at 0% 50%);}
+    2.5%{clip-path: circle(110px at 5% 50%);}
+    5%{clip-path: circle(100px at 10% 50%);}
+    7.5%{clip-path: circle(110px at 15% 50%);}
+    10%{clip-path: circle(105px at 20% 50%);}
+    12.5%{clip-path: circle(110px at 25% 50%);}
+    15% { clip-path: circle(100px at 30% 50%);}
+    17.5%{clip-path: circle(110px at 35% 50%);}
+    20%{clip-path: circle(105px at 40% 50%);}
+    22.5%{clip-path: circle(110px at 45% 50%);}
+    25%{clip-path: circle(100px at 50% 50%);}
+    27.5%{clip-path: circle(110px at 55% 50%);}
+    30% { clip-path: circle(105px at 60% 50%);}
+    32.5%{clip-path: circle(110px at 65% 50%);}
+    35%{clip-path: circle(100px at 70% 50%);}
+    37.5%{clip-path: circle(110px at 75% 50%);}
+    40%{clip-path: circle(105px at 80% 50%);}
+    42.5%{clip-path: circle(110px at 85% 50%);}
+    45% { clip-path: circle(100px at 90% 50%);}
+    47.5%{clip-path: circle(110px at 95% 50%);}
+    50%{clip-path: circle(105px at 100% 50%);}
+
+    50% { clip-path: circle(105px at 100% 50%);}
+    52.5%{clip-path: circle(110px at 95% 50%);}
+    55%{clip-path: circle(100px at 90% 50%);}
+    57.5%{clip-path: circle(110px at 85% 50%);}
+    60%{clip-path: circle(105px at 80% 50%);}
+    62.5%{clip-path: circle(110px at 75% 50%);}
+    65% { clip-path: circle(100px at 70% 50%);}
+    67.5%{clip-path: circle(110px at 65% 50%);}
+    70%{clip-path: circle(105px at 60% 50%);}
+    72.5%{clip-path: circle(110px at 55% 50%);}
+    75%{clip-path: circle(100px at 50% 50%);}
+    77.5%{clip-path: circle(110px at 45% 50%);}
+    80% { clip-path: circle(105px at 40% 50%);}
+    82.5%{clip-path: circle(110px at 35% 50%);}
+    85%{clip-path: circle(100px at 30% 50%);}
+    87.5%{clip-path: circle(110px at 25% 50%);}
+    90%{clip-path: circle(105px at 20% 50%);}
+    92.5%{clip-path: circle(110px at 15% 50%);}
+    95% { clip-path: circle(100px at 10% 50%);}
+    97.5%{clip-path: circle(110px at 5% 50%);}
+    100%{clip-path: circle(105px at 0% 50%);}
+}
+@keyframes move-ball--2 {
+    0% { clip-path: circle(100% at -100% 50%);}
+    2.5%{clip-path: circle(100% at -90% 50%);}
+    5%{clip-path: circle(100% at -80% 50%);}
+    7.5%{clip-path: circle(100% at -70% 50%);}
+    10%{clip-path: circle(100% at -60% 50%);}
+    12.5%{clip-path: circle(100% at -50% 50%);}
+    15% { clip-path: circle(100% at -40% 50%);}
+    17.5%{clip-path: circle(100% at -30% 50%);}
+    20%{clip-path: circle(100% at -20% 50%);}
+    22.5%{clip-path: circle(100% at -10% 50%);}
+    25%{clip-path: circle(100% at 0% 50%);}
+    27.5%{clip-path: circle(100% at 10% 50%);}
+    30% { clip-path: circle(1100%at 20% 50%);}
+    32.5%{clip-path: circle(100% at 30% 50%);}
+    35%{clip-path: circle(100% at 40% 50%);}
+    37.5%{clip-path: circle(100% at 50% 50%);}
+    40%{clip-path: circle(100% at 60% 50%);}
+    42.5%{clip-path: circle(100% at 70% 50%);}
+    45% { clip-path: circle(100% at 80% 50%);}
+    47.5%{clip-path: circle(100% at 90% 50%);}
+    50%{clip-path: circle(100% at 100% 50%);}
+
+    50% { clip-path: circle(100% at 100% 50%);}
+    52.5%{clip-path: circle(100% at 110% 50%);}
+    55%{clip-path: circle(100% at 120% 50%);}
+    57.5%{clip-path: circle(100% at 130% 50%);}
+    60%{clip-path: circle(100% at 140% 50%);}
+    62.5%{clip-path: circle(100% at 150% 50%);}
+    65% { clip-path: circle(100% at 160% 50%);}
+    67.5%{clip-path: circle(100% at 170% 50%);}
+    70%{clip-path: circle(100% at 180% 50%);}
+    72.5%{clip-path: circle(100% at 190% 50%);}
+    75%{clip-path: circle(100% at 200% 50%);}
+    77.5%{clip-path: circle(100% at 210% 50%);}
+    80% { clip-path: circle(100% at 220% 50%);}
+    82.5%{clip-path: circle(100% at 230% 50%);}
+    85%{clip-path: circle(100% at 240% 50%);}
+    87.5%{clip-path: circle(100% at 250% 50%);}
+    90%{clip-path: circle(100% at 260% 50%);}
+    92.5%{clip-path: circle(100% at 270% 50%);}
+    95% { clip-path: circle(100% at 280% 50%);}
+    97.5%{clip-path: circle(100% at 290% 50%);}
+    100%{clip-path: circle(100% at 300% 50%);}
+}
+@keyframes color-letter {
+    0%{color:rgb(248, 248, 248);}
+    20%{color: rgb(31, 248, 31);}
+    40%{color:rgb(0, 162, 86)}
+    60%{color: rgb(4, 106, 38);}
+    80%{color: rgb(5, 41, 5);}
+    100%{color: rgb(0, 0, 0);}
+}
+@keyframes rainbow-background {
+    0% { color: #aaaaaa; }
+    8.333% { color: #333333; }
+    16.667% { color: #11ff00; }
+    25.000% { color: #30ff00; }
+    33.333% { color: #00ff00; }
+    41.667% { color: #00ff80; }
+    50.000% { color: #003300; }
+    58.333% { color: #00ff80; }
+    66.667% { color: #00ff00; }
+    75.000% { color: #30ff00; }
+    83.333% { color: #11ff00; } 
+    91.667% { color: #333333; }
+ 100.00% { color: #aaaaaa; }
+}
+/*FONTS*/
+@font-face {
+    font-family: 'Play';
+    src: url(/recursos/fonts/Play/Play-Regular.ttf);
+}
+@keyframes color-bottom {
+    0%{border-right: 3px solid rgb(248, 248, 248);}
+    20%{border-right: 3px solid  rgb(31, 248, 31);}
+    40%{border-right: 3px solid rgb(0, 162, 86)}
+    60%{border-right: 3px solid  rgb(4, 106, 38);}
+    80%{border-right: 3px solid  rgb(5, 41, 5);}
+    100%{border-right: 3px solid  rgb(0, 0, 0);}
+}
+@keyframes color-bottom-left {
+    0%{border-left: 3px solid rgb(248, 248, 248);}
+    20%{border-left: 3px solid  rgb(31, 248, 31);}
+    40%{border-left: 3px solid rgb(0, 162, 86)}
+    60%{border-left: 3px solid  rgb(4, 106, 38);}
+    80%{border-left: 3px solid  rgb(5, 41, 5);}
+    100%{border-left: 3px solid  rgb(0, 0, 0);}
+}
+
+

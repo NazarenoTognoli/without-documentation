@@ -1,0 +1,2872 @@
+
+body {
+	background: #191717;
+}
+:root {
+
+	--a-color:#FF2400;
+
+	--p-color:#212F3C;
+}
+.boxOfBoxes-android {
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+
+/*---------------------HEADER ZONE - -- - -- - - --*/ 
+
+	.header {
+		flex-basis:100vw; 
+		height: 3em;
+		background: var(--p-color);
+		/*order-bottom: var(--a-color) solid 2px;*/
+		display: flex;
+		flex-basis: ;flex-wrap: wrap;
+	}
+	.header__h1 {
+		display: flex;
+		width: 100%;
+		height: 60%;
+		position: relative;
+		background-color: #191717;
+		margin: 0;
+		padding: 0;
+		font-size: 2vh;
+		text-align: center;
+		color: rgb(255, 255, 255, .1);
+		justify-content: center;
+		align-items: center;
+		font-family: 'Open Sans';
+		letter-spacing: 6vw;
+	}
+	.header__nav {
+		display: block;
+		width: 100%;
+		position: relative;
+		background: #222;
+		height: 40%;
+	}
+	.header__ul {
+		display: flex;
+		justify-content: space-around;
+		align-items: center ;
+		height: 100%;
+	}
+	.header__li {
+		display: flex;
+		/*font-size: 1.9vh;*/
+		font-size: .760em;
+		padding: 0 1vw;
+		/*background: #2;*/
+		font-family: 'Noto Sans', sans-serif;
+		letter-spacing: .2vw;
+		color: #CCC;
+		background: #111;
+		flex-basis: 15%;
+		justify-content: center;
+		align-items: center;
+		background: linear-gradient(to top, #222 1%, #444 100%);
+		border-radius: 8%;
+	}
+	.header__li:active {
+		background: linear-gradient(to top, #444 1%, #222 100%);
+	}
+	.header__li button {
+		flex-basis: 100%;
+	}
+	
+
+/*---------------------MOTHERSECTION---------------*/
+	.mothersection {
+		display: flex;
+		flex-wrap: nowrap;
+		width: 100%;
+		height: 100%;
+	}
+
+
+/*---------------------ASIDE ZONE----- -- - - -- - */
+
+	button {
+  	background: none;
+  	border: 0;
+  	color: inherit;
+  	/* cursor: default; */
+  	font: inherit;
+  	line-height: normal;
+  	overflow: visible;
+  	padding: 0;
+  	-webkit-user-select: none; /* for button */
+   	-webkit-appearance: button; /* for input */
+     	-moz-user-select: none;
+      	-ms-user-select: none;
+	}
+	.aside {
+		flex-basis:13%;
+		/*height: 100%;*/
+		background:#191717;
+	 	/*der-right: var(--a-color) solid 2px;*/
+		display: inherit;
+		justify-content: center;
+		align-content: flex-start;
+		flex-wrap: wrap;
+		border-right: solid #222 5px;
+		font-size: 60%;
+	}
+	/*.aside:hover {
+		flex-basis: 10%;
+		transition: flex-basis 190ms ease;
+	}*/
+	.aside__button {
+		display: block;
+		width: 80%;
+		height: 3em;
+		/*min-height: 6vh;*/
+		background: #222;
+		margin-top: 20px;
+		border-radius: 3px;
+		color: #444;
+		font-size: inherit;
+		font-family: 'Open Sans';
+	}
+	.aside__button:active{
+		transform: scale(.9);
+		transition: transform 50ms ease;
+	}
+	.aside__button:hover {
+		/*outline: 1.5px solid #FFF;*/
+		/*transform: translateX(.5vw);
+		background:linear-gradient(to right, black 1%, #222 50%, black 100%);
+		transition: transform 50ms ease;*/
+		color: #FFF;
+
+	}
+
+
+/*-------------------- EMBED ZONE ------------------*/
+
+
+	.embed {
+		flex-basis: 100%;
+		height: 50em;
+		background:#FFF;
+		display: none;
+	}
+
+	/*------------ MAIN ---------------*/
+		.embed-0{
+			background: black;
+			background: linear-gradient(310deg, rgba(0,0,0,1) 23%, rgba(50,50,50,1) 31%, rgba(0,0,0,1) 72%, rgba(25,25,25,1) 90%);
+		}
+		.main__p {
+			color: #CCC;
+			padding-top: 10vh;
+			padding-left: 4vw;
+			background: rgba(0, 0, 0, .2);
+			width: 100%;
+			height: 7em;
+			margin-top: 10vh;
+			font-size: 1.4em;
+			font-family: 'Source Sans Pro';
+
+		}
+		.main__p b {
+			padding-left: 3vh;
+		}
+		.main__p em {
+			color: #e03434;
+		}
+	/*------------ DEV WEB ------------*/
+		.embed-1{
+			background: #000;
+			flex-wrap: wrap;
+			display: none;
+			height: 100%;
+		}	
+		/*-------- NAV -----------*/
+				.dev-web__nav {
+					flex-basis: 100%;
+					height: 19.19px;
+					background: white;
+					display: flex;
+					justify-content: space-around;
+					align-items: center;
+					background: #444;
+					font-size: .8em;
+				}
+					.dev-web__nav button {
+					height: 70%;
+					flex-basis: 20%;
+					background:linear-gradient(to top, #444 1%, #FFF 100%);
+					border-radius: 8%;
+				}	
+					.dev-web__nav button:active {
+					background:linear-gradient(to top, #FFF 1%, #444 100%);
+				}
+		/*------- SECTIONS -------*/
+					.courses, .articles {
+						flex-basis: 50%;
+						height: calc(100% - 3.1vh);
+					}
+		/*----- CORE ------*/
+					.dev-web__core {
+						display: inherit;
+						height:100%;
+						flex-basis: 100%;
+					}
+					.dev-web__core-courses {
+						border-right: 2px solid #222;
+						display: inherit;
+						flex-wrap: wrap;
+					}
+					.dev-web__core-articles {
+						border-left: 2px solid #222;
+						display: inherit;
+						flex-wrap: wrap;
+					}
+					.dev-web__core-courses-h3 {
+						flex-basis: 100%;
+						height: 4%;
+						background: #191717;
+						border-top: 2px solid #222;
+						border-bottom: 2px solid #222;
+						color: #AAA;
+						text-align: center;
+						letter-spacing: 2vw;
+						align-items: center;
+						font-size: 1.1em;
+					}
+					.dev-web__core-articles-h3 {
+						flex-basis: 100%;
+						height: 4%;
+						background: #191717;
+						border-top: 2px solid #222;
+						border-bottom: 2px solid #222;
+						color: #AAA;
+						text-align: center;
+						letter-spacing: 2vw;
+						font-size: 1.1em;	
+					}
+					/*-------COURSES-----------*/
+						.dev-web__core-courses-css {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__core-courses-html	{
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__core-courses-js {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__core-courses-php {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+							.dev-web__core-courses-css-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__core-courses-html-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__core-courses-js-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__core-courses-php-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height:2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							/*----------COURSES-LINK----------*/
+								
+								/*---------CSS-LINK--------*/
+									.coursescorecsslink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+										text-decoration: none;
+									}
+									.coursescorecsslink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.coursescorecsslink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+									.dev-web__core-courses-css-linker-1 div {
+										/*animation: color-point-green .5s infinite;*/
+										background: #0F0;
+									}
+									.dev-web__core-courses-css-linker-2 div {
+										/*animation: color-point-red .7s infinite;*/
+										background: #073;
+									}
+									.dev-web__core-courses-css-linker-3 div {
+										/*animation: color-point-green .5s infinite;*/
+										background: #0F0;
+									}
+									.dev-web__core-courses-css-linker-4 div {
+										/*animation: color-point-red .7s infinite;*/
+										background: #073;
+									}
+									.dev-web__core-courses-css-linker-5 div {
+										/*animation: color-point-red .7s infinite;*/
+										background: #073;
+									}
+									.dev-web__core-courses-css-linker-6 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										background: #AAA;
+									}
+								/*--------HTML-LINK--------*/
+									.coursescorehtmllink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+									}
+									.coursescorehtmllink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.coursescorehtmllink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+									.dev-web__core-courses-html-linker-1 div {
+										/*animation: color-point-green .5s infinite;*/
+										background:#0F0 ;
+									}
+									.dev-web__core-courses-html-linker-2 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										background: #AAA;
+									}
+									.dev-web__core-courses-html-linker-3 div {
+										/*animation: color-point-red .7s infinite;*/
+										background: #073;
+									}
+								/*---------JS-LINK---------*/
+									.coursescorejslink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+									}
+									.coursescorejslink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.coursescorejslink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+									.dev-web__core-courses-js-linker-1 div {
+										animation: color-point-green .5s infinite;
+										/*background: #0F0;*/
+									}
+									.dev-web__core-courses-js-linker-2 div {
+										/*animation: color-point-red .7s infinite;*/
+										background:#073;
+									}
+									.dev-web__core-courses-js-linker-3 div {
+										/*animation: color-point-green .5s infinite;*/
+										background: #0F0;
+									}
+									.dev-web__core-courses-js-linker-4 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										background: #AAA;
+									}
+								/*---------PHP-LINK---------*/
+									.coursescorephplink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+									}
+									.coursescorephplink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.coursescorephplink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+									.dev-web__core-courses-php-linker-1 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										background: #0F0;
+									}
+									.dev-web__core-courses-php-linker-2 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										background: #AAA;
+									}
+									/*----
+									/*------PERFORMANCE-ARRAIGNMENT----*/
+										/*.coursescorephplink div, .coursescorejslink div, .coursescorehtmllink div, .coursescorecsslink div {
+											display: inherit;
+										}*/					
+					/*-------ARTICLES---------*/
+						.dev-web__core-articles-css {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__core-articles-html	{
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__core-articles-js {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__core-articles-php {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+							.dev-web__core-articles-css-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__core-articles-html-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__core-articles-js-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__core-articles-php-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height:2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							/*---------ARTICLES-LINK--------*/
+
+								/*------CSS-LINK-----------*/
+									.articlescorecsslink {
+											flex-basis: 100%;
+											height: 2.3em;
+											background: #000;
+											border-bottom: 2px solid #222;
+											border-right: 2px solid #222;
+											display: inherit;
+											text-decoration: none;
+										}
+										.articlescorecsslink b {
+											color: #CCC;
+											align-self: center;
+											padding-left: 5px;
+											font-size: .6em;
+										}
+										.articlescorecsslink div {
+											flex-basis: 7px;
+											height: 7px;
+											border-radius: 7px;
+											background: #111;
+											align-self: center;
+											margin-left: 10px;
+										}
+								/*------HTML-LINK----------*/
+									.articlescorehtmllink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+										text-decoration: none;
+									}
+									.articlecorehtmllink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.articlescorehtmllink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+								/*------JS-LINK------------*/
+									.articlescorejslink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+										text-decoration: none;
+									}
+									.articlescorejslink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.articlescorejslink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+								/*------PHP-LINK-----------*/
+									.articlescorephplink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+										text-decoration: none;
+									}
+									.articlescorephplink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.articlescorephplink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}			
+		/*---frameworks----*/
+					.dev-web__framework {
+						display: none;
+						height: 100%;
+						flex-basis: 100%;
+					}
+					.dev-web__framework-courses {
+						border-right: 2px solid #222;
+						display: inherit;
+						flex-wrap: wrap;
+					}
+					.dev-web__framework-articles {
+						border-left: 2px solid #222;
+						display: inherit;
+						flex-wrap: wrap;
+					}
+					.dev-web__framework-courses-h3 {
+						flex-basis: 100%;
+						height: 4%;
+						background: #191717;
+						border-top: 2px solid #222;
+						border-bottom: 2px solid #222;
+						color: #AAA;
+						text-align: center;
+						letter-spacing: 2vw;
+						align-items: center;
+						font-size: 1.1em;
+					}
+					.dev-web__framework-articles-h3 {
+						flex-basis: 100%;
+						height: 4%;
+						background: #191717;
+						border-top: 2px solid #222;
+						border-bottom: 2px solid #222;
+						color: #AAA;
+						text-align: center;
+						letter-spacing: 2vw;
+						font-size: 1.1em;	
+					}
+					/*-------COURSES-----------*/
+						.dev-web__framework-courses-css {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__framework-courses-html	{
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__framework-courses-js {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__framework-courses-php {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+							.dev-web__framework-courses-css-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__framework-courses-html-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__framework-courses-js-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__framework-courses-php-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height:2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							/*----------COURSES-LINK----------*/
+								
+								/*---------CSS-LINK--------*/
+									.coursesframeworkcsslink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+										text-decoration: none;
+									}
+									.coursesframeworkcsslink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.coursesframeworkcsslink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+									.dev-web__framework-courses-css-linker-1 div {
+										/*animation: color-point-green .5s infinite;*/
+										/*background: #0F0;*/
+									}
+									.dev-web__framework-courses-css-linker-2 div {
+										/*animation: color-point-red .7s infinite;*/
+										/*background: #F00;*/
+									}
+									.dev-web__framework-courses-css-linker-3 div {
+										/*animation: color-point-green .5s infinite;*/
+										/*background: #0F0;*/
+									}
+									.dev-web__framework-courses-css-linker-4 div {
+										/*animation: color-point-red .7s infinite;*/
+										/*background: #F00;*/
+									}
+									.dev-web__framework-courses-css-linker-5 div {
+										/*animation: color-point-red .7s infinite;*/
+										/*background: #F00;*/
+									}
+									.dev-web__framework-courses-css-linker-6 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										/*background: #FFF;*/
+									}
+								/*--------HTML-LINK--------*/
+									.coursesframeworkhtmllink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+									}
+									.coursesframeworkhtmllink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.coursesframeworkhtmllink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+									.dev-web__framework-courses-html-linker-1 div {
+										/*animation: color-point-green .5s infinite;*/
+										/*background:#0F0 ;*/
+									}
+									.dev-web__framework-courses-html-linker-2 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										/*background: #FFF;*/
+									}
+									.dev-web__framework-courses-html-linker-3 div {
+										/*animation: color-point-red .7s infinite;*/
+										/*background: #F00;*/
+									}
+								/*---------JS-LINK---------*/
+									.coursesframeworkjslink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+									}
+									.coursesframeworkjslink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.coursesframeworkjslink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+									.dev-web__framework-courses-js-linker-1 div {
+										/*animation: color-point-green .5s infinite;*/
+										/*background: #0F0;*/
+									}
+									.dev-web__framework-courses-js-linker-2 div {
+										/*animation: color-point-red .7s infinite;*/
+										/*background:#F00;*/
+									}
+									.dev-web__framework-courses-js-linker-3 div {
+										/*animation: color-point-green .5s infinite;*/
+										/*background: #0F0;*/
+									}
+									.dev-web__framework-courses-js-linker-4 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										/*background: #FFF;*/
+									}
+								/*---------PHP-LINK---------*/
+									.coursesframeworkphplink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+									}
+									.coursesframeworkphplink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.coursesframeworkphplink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+									.dev-web__framework-courses-php-linker-1 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										/*background: #0F0;*/
+									}
+									.dev-web__framework-courses-php-linker-2 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										/*background: #FFF;*/
+									}
+									/*----
+									/*------PERFORMANCE-ARRAIGNMENT----*/
+										/*.coursesframeworkphplink div, .coursesframeworkjslink div, .coursesframeworkhtmllink div, .coursesframeworkcsslink div {
+											display: inherit;
+										}*/					
+					/*-------ARTICLES---------*/
+						.dev-web__framework-articles-css {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__framework-articles-html	{
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__framework-articles-js {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__framework-articles-php {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+							.dev-web__framework-articles-css-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__framework-articles-html-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__framework-articles-js-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__framework-articles-php-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height:2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							/*---------ARTICLES-LINK--------*/
+
+								/*------CSS-LINK-----------*/
+									.articlesframeworkcsslink {
+											flex-basis: 100%;
+											height: 2.3em;
+											background: #000;
+											border-bottom: 2px solid #222;
+											border-right: 2px solid #222;
+											display: inherit;
+											text-decoration: none;
+										}
+										.articlesframeworkcsslink b {
+											color: #CCC;
+											align-self: center;
+											padding-left: 5px;
+											font-size: .6em;
+										}
+										.articlesframeworkcsslink div {
+											flex-basis: 7px;
+											height: 7px;
+											border-radius: 7px;
+											background: #111;
+											align-self: center;
+											margin-left: 10px;
+										}
+								/*------HTML-LINK----------*/
+									.articlesframeworkhtmllink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+										text-decoration: none;
+									}
+									.articleframeworkhtmllink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.articlesframeworkhtmllink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+								/*------JS-LINK------------*/
+									.articlesframeworkjslink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+										text-decoration: none;
+									}
+									.articlesframeworkjslink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.articlesframeworkjslink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+								/*------PHP-LINK-----------*/
+									.articlesframeworkphplink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+										text-decoration: none;
+									}
+									.articlesframeworkphplink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.articlesframeworkphplink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}			
+		/*---libraries-----*/
+					.dev-web__libraries {
+						display: none;
+						height: 100%;
+						flex-basis: 100%;
+					}
+					.dev-web__libraries-courses {
+						border-right: 2px solid #222;
+						display: inherit;
+						flex-wrap: wrap;
+					}
+					.dev-web__libraries-articles {
+						border-left: 2px solid #222;
+						display: inherit;
+						flex-wrap: wrap;
+					}
+					.dev-web__libraries-courses-h3 {
+						flex-basis: 100%;
+						height: 4%;
+						background: #191717;
+						border-top: 2px solid #222;
+						border-bottom: 2px solid #222;
+						color: #AAA;
+						text-align: center;
+						letter-spacing: 2vw;
+						align-items: center;
+						font-size: 1.1em;
+					}
+					.dev-web__libraries-articles-h3 {
+						flex-basis: 100%;
+						height: 4%;
+						background: #191717;
+						border-top: 2px solid #222;
+						border-bottom: 2px solid #222;
+						color: #AAA;
+						text-align: center;
+						letter-spacing: 2vw;
+						font-size: 1.1em;	
+					}
+					/*-------COURSES-----------*/
+						.dev-web__libraries-courses-css {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__libraries-courses-html	{
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__libraries-courses-js {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__libraries-courses-php {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+							.dev-web__libraries-courses-css-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__libraries-courses-html-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__libraries-courses-js-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__libraries-courses-php-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height:2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							/*----------COURSES-LINK----------*/
+								
+								/*---------CSS-LINK--------*/
+									.courseslibrariescsslink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+										text-decoration: none;
+									}
+									.courseslibrariescsslink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.courseslibrariescsslink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+									.dev-web__libraries-courses-css-linker-1 div {
+										/*animation: color-point-green .5s infinite;*/
+										/*background: #0F0;*/
+									}
+									.dev-web__libraries-courses-css-linker-2 div {
+										/*animation: color-point-red .7s infinite;*/
+										/*background: #F00;*/
+									}
+									.dev-web__libraries-courses-css-linker-3 div {
+										/*animation: color-point-green .5s infinite;*/
+										/*background: #0F0;*/
+									}
+									.dev-web__libraries-courses-css-linker-4 div {
+										/*animation: color-point-red .7s infinite;*/
+										/*background: #F00;*/
+									}
+									.dev-web__libraries-courses-css-linker-5 div {
+										/*animation: color-point-red .7s infinite;*/
+										/*background: #F00;*/
+									}
+									.dev-web__libraries-courses-css-linker-6 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										/*background: #FFF;*/
+									}
+								/*--------HTML-LINK--------*/
+									.courseslibrarieshtmllink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+									}
+									.courseslibrarieshtmllink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.courseslibrarieshtmllink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+									.dev-web__libraries-courses-html-linker-1 div {
+										/*animation: color-point-green .5s infinite;*/
+										/*background:#0F0 ;*/
+									}
+									.dev-web__libraries-courses-html-linker-2 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										/*background: #FFF;*/
+									}
+									.dev-web__libraries-courses-html-linker-3 div {
+										/*animation: color-point-red .7s infinite;*/
+										/*background: #F00;*/
+									}
+								/*---------JS-LINK---------*/
+									.courseslibrariesjslink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+									}
+									.courseslibrariesjslink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.courseslibrariesjslink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+									.dev-web__libraries-courses-js-linker-1 div {
+										/*animation: color-point-green .5s infinite;*/
+										/*background: #0F0;*/
+									}
+									.dev-web__libraries-courses-js-linker-2 div {
+										/*animation: color-point-red .7s infinite;*/
+										/*background:#F00;*/
+									}
+									.dev-web__libraries-courses-js-linker-3 div {
+										/*animation: color-point-green .5s infinite;*/
+										/*background: #0F0;*/
+									}
+									.dev-web__libraries-courses-js-linker-4 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										/*background: #FFF;*/
+									}
+								/*---------PHP-LINK---------*/
+									.courseslibrariesphplink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+									}
+									.courseslibrariesphplink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.courseslibrariesphplink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+									.dev-web__libraries-courses-php-linker-1 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										/*background: #0F0;*/
+									}
+									.dev-web__libraries-courses-php-linker-2 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										/*background: #FFF;*/
+									}
+									/*----
+									/*------PERFORMANCE-ARRAIGNMENT----*/
+										/*.courseslibrariesphplink div, .courseslibrariesjslink div, .courseslibrarieshtmllink div, .courseslibrariescsslink div {
+											display: inherit;
+										}*/					
+					/*-------ARTICLES---------*/
+						.dev-web__libraries-articles-css {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__libraries-articles-html	{
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__libraries-articles-js {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__libraries-articles-php {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+							.dev-web__libraries-articles-css-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__libraries-articles-html-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__libraries-articles-js-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__libraries-articles-php-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height:2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							/*---------ARTICLES-LINK--------*/
+
+								/*------CSS-LINK-----------*/
+									.articleslibrariescsslink {
+											flex-basis: 100%;
+											height: 2.3em;
+											background: #000;
+											border-bottom: 2px solid #222;
+											border-right: 2px solid #222;
+											display: inherit;
+											text-decoration: none;
+										}
+										.articleslibrariescsslink b {
+											color: #CCC;
+											align-self: center;
+											padding-left: 5px;
+											font-size: .6em;
+										}
+										.articleslibrariescsslink div {
+											flex-basis: 7px;
+											height: 7px;
+											border-radius: 7px;
+											background: #111;
+											align-self: center;
+											margin-left: 10px;
+										}
+								/*------HTML-LINK----------*/
+									.articleslibrarieshtmllink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+										text-decoration: none;
+									}
+									.articlelibrarieshtmllink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.articleslibrarieshtmllink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+								/*------JS-LINK------------*/
+									.articleslibrariesjslink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+										text-decoration: none;
+									}
+									.articleslibrariesjslink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.articleslibrariesjslink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+								/*------PHP-LINK-----------*/
+									.articleslibrariesphplink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+										text-decoration: none;
+									}
+									.articleslibrariesphplink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.articleslibrariesphplink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}			
+		/*---others--------*/
+					.dev-web__others {
+						display: none;
+						height: 100%;
+						flex-basis: 100%;
+					}
+					.dev-web__others-courses {
+						border-right: 2px solid #222;
+						display: inherit;
+						flex-wrap: wrap;
+					}
+					.dev-web__others-articles {
+						border-left: 2px solid #222;
+						display: inherit;
+						flex-wrap: wrap;
+					}
+					.dev-web__others-courses-h3 {
+						flex-basis: 100%;
+						height: 4%;
+						background: #191717;
+						border-top: 2px solid #222;
+						border-bottom: 2px solid #222;
+						color: #AAA;
+						text-align: center;
+						letter-spacing: 2vw;
+						align-items: center;
+						font-size: 1.1em;
+					}
+					.dev-web__others-articles-h3 {
+						flex-basis: 100%;
+						height: 4%;
+						background: #191717;
+						border-top: 2px solid #222;
+						border-bottom: 2px solid #222;
+						color: #AAA;
+						text-align: center;
+						letter-spacing: 2vw;
+						font-size: 1.1em;	
+					}
+					/*-------COURSES-----------*/
+						.dev-web__others-courses-css {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__others-courses-html	{
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__others-courses-js {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__others-courses-php {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+							.dev-web__others-courses-css-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__others-courses-html-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__others-courses-js-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__others-courses-php-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height:2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							/*----------COURSES-LINK----------*/
+								
+								/*---------CSS-LINK--------*/
+									.coursesotherscsslink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+										text-decoration: none;
+									}
+									.coursesotherscsslink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.coursesotherscsslink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+									.dev-web__others-courses-css-linker-1 div {
+										/*animation: color-point-green .5s infinite;*/
+										/*background: #0F0;*/
+									}
+									.dev-web__others-courses-css-linker-2 div {
+										/*animation: color-point-red .7s infinite;*/
+										/*background: #F00;*/
+									}
+									.dev-web__others-courses-css-linker-3 div {
+										/*animation: color-point-green .5s infinite;*/
+										/*background: #0F0;*/
+									}
+									.dev-web__others-courses-css-linker-4 div {
+										/*animation: color-point-red .7s infinite;*/
+										/*background: #F00;*/
+									}
+									.dev-web__others-courses-css-linker-5 div {
+										/*animation: color-point-red .7s infinite;*/
+										/*background: #F00;*/
+									}
+									.dev-web__others-courses-css-linker-6 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										/*background: #FFF;*/
+									}
+								/*--------HTML-LINK--------*/
+									.coursesothershtmllink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+									}
+									.coursesothershtmllink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.coursesothershtmllink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+									.dev-web__others-courses-html-linker-1 div {
+										/*animation: color-point-green .5s infinite;*/
+										/*background:#0F0 ;*/
+									}
+									.dev-web__others-courses-html-linker-2 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										/*background: #FFF;*/
+									}
+									.dev-web__others-courses-html-linker-3 div {
+										/*animation: color-point-red .7s infinite;*/
+										/*background: #F00;*/
+									}
+								/*---------JS-LINK---------*/
+									.coursesothersjslink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+									}
+									.coursesothersjslink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.coursesothersjslink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+									.dev-web__others-courses-js-linker-1 div {
+										/*animation: color-point-green .5s infinite;*/
+										/*background: #0F0;*/
+									}
+									.dev-web__others-courses-js-linker-2 div {
+										/*animation: color-point-red .7s infinite;*/
+										/*background:#F00;*/
+									}
+									.dev-web__others-courses-js-linker-3 div {
+										/*animation: color-point-green .5s infinite;*/
+										/*background: #0F0;*/
+									}
+									.dev-web__others-courses-js-linker-4 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										/*background: #FFF;*/
+									}
+								/*---------PHP-LINK---------*/
+									.coursesothersphplink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+									}
+									.coursesothersphplink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.coursesothersphplink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+									.dev-web__others-courses-php-linker-1 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										/*background: #0F0;*/
+									}
+									.dev-web__others-courses-php-linker-2 div {
+										/*animation: color-point-blue 1.1s infinite;*/
+										/*background: #FFF;*/
+									}
+									/*----
+									/*------PERFORMANCE-ARRAIGNMENT----*/
+										/*.coursesothersphplink div, .coursesothersjslink div, .coursesothershtmllink div, .coursesotherscsslink div {
+											display: inherit;
+										}*/					
+					/*-------ARTICLES---------*/
+						.dev-web__others-articles-css {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__others-articles-html	{
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__others-articles-js {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+						.dev-web__others-articles-php {
+							flex-basis: 25%;
+							height: calc(100% - 4%);
+							background: #000;
+							display: inherit;
+							flex-wrap: wrap;
+							align-content: flex-start;
+						}
+							.dev-web__others-articles-css-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__others-articles-html-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__others-articles-js-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height: 2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							.dev-web__others-articles-php-h4 {
+								flex-basis: 100%;
+								height: 5%;
+								background: #222;
+								text-align: center;
+								line-height:2;
+								color: #555;
+								border-top: 2px solid #191717;
+								font-size: 1em;
+							}
+							/*---------ARTICLES-LINK--------*/
+
+								/*------CSS-LINK-----------*/
+									.articlesotherscsslink {
+											flex-basis: 100%;
+											height: 2.3em;
+											background: #000;
+											border-bottom: 2px solid #222;
+											border-right: 2px solid #222;
+											display: inherit;
+											text-decoration: none;
+										}
+										.articlesotherscsslink b {
+											color: #CCC;
+											align-self: center;
+											padding-left: 5px;
+											font-size: .6em;
+										}
+										.articlesotherscsslink div {
+											flex-basis: 7px;
+											height: 7px;
+											border-radius: 7px;
+											background: #111;
+											align-self: center;
+											margin-left: 10px;
+										}
+								/*------HTML-LINK----------*/
+									.articlesothershtmllink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+										text-decoration: none;
+									}
+									.articleothershtmllink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.articlesothershtmllink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+								/*------JS-LINK------------*/
+									.articlesothersjslink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+										text-decoration: none;
+									}
+									.articlesothersjslink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.articlesothersjslink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}
+									.dev-web__others-articles-js-linker-2 div{
+										background: #0F0;
+										animation: color-point-green .5s infinite;
+									}
+									.dev-web__others-articles-js-linker-3 div{
+										background: #0F0;
+										animation: color-point-green .5s infinite;
+									}
+									.dev-web__others-articles-js-linker-1 div{
+										background: #0F0;
+										animation: color-point-green .5s infinite;
+									}
+								/*------PHP-LINK-----------*/
+									.articlesothersphplink {
+										flex-basis: 100%;
+										height: 2.3em;
+										background: #000;
+										border-bottom: 2px solid #222;
+										border-right: 2px solid #222;
+										display: inherit;
+										text-decoration: none;
+									}
+									.articlesothersphplink b {
+										color: #CCC;
+										align-self: center;
+										padding-left: 5px;
+										font-size: .6em;
+									}
+									.articlesothersphplink div {
+										flex-basis: 7px;
+										height: 7px;
+										border-radius: 7px;
+										background: #111;
+										align-self: center;
+										margin-left: 10px;
+									}	
+
+	/*------------ Devweb+ -------------*/
+		.embed-2{
+			background-color: red;
+			flex-wrap: wrap;
+			height: 100%;
+		}
+	/*------------ Math ----------- ---*/
+		.embed-3{
+			background-color: purple;
+		}
+	/*------------ ENGL ---------------*/
+		.embed-4{
+			background-color: yellow;
+		}
+	/*----------- Date ----------------*/
+		.embed-5{
+			display: none;
+			justify-content: center;
+			background: #000;
+			color: #CCC;
+			height: 47em;
+		}	
+	/*----------Entire datetable--------------*/
+		/*------------FLEX-CONTAINER----------*/
+		.datetable-flex-box {
+			display: flex;
+			margin-top: 2vh;
+			width: 95%;
+			/*height: 100%;*/
+			margin-bottom:2vh;
+			background: #222;
+			align-self: flex-start;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+		}
+		/*--------DATETABLE-----------------*/
+		.datetable-grid {
+			margin:1vh ;
+			display: grid;
+			flex-basis: 50vw;
+			width: calc(100% - 2vh);
+			grid-template-columns: repeat(50, 1fr);
+			grid-template-rows: repeat(38, 1fr);
+
+		}
+		.rightside {
+			grid-column: 46/51;
+			grid-row: 1/39;
+			background: #222;
+			border: 1px solid #222;
+			display: flex;
+			flex-direction: column;
+			font-size: 1.2vw;
+			justify-content: flex-start;
+		}
+		.rightside b {
+			background: rgba(0, 0, 0, .2);
+			color: #999;
+			margin-top: 2vh;
+			margin-bottom: 2vh;
+			padding-left: 1vw;
+		}
+
+		.lunes {
+			grid-column: 1/8;
+			grid-row: 1/3;
+		}
+
+		.martes {
+			grid-column: 8/14;
+			grid-row: 1/3;
+		}
+
+		.miercoles {
+			grid-column: 14/20;
+			grid-row: 1/3;
+		}
+
+		.jueves {
+			grid-column: 20/26;
+			grid-row: 1/3;
+		}
+
+		.viernes {
+			grid-column: 26/32;
+			grid-row: 1/3;
+		}
+
+		.sabado {
+			grid-column: 32/38;
+			grid-row: 1/3;
+		}
+
+		.domingo {
+			grid-column: 38/44;
+			grid-row: 1/3;
+		}
+		.xi {
+			grid-column: 44/46;
+			grid-row: 1/3;
+		}
+
+		.hs6 {
+			grid-column: 44/46;
+			grid-row: 3/5;
+		}
+		.hs7 {
+			grid-column: 44/46;
+			grid-row:5/7;
+		}
+		.hs8 {
+			grid-column: 44/46;
+			grid-row:7/9;
+		}
+		.hs9 {
+			grid-column: 44/46;
+			grid-row:9/11;
+		}
+		.hs10 {
+			grid-column: 44/46;
+			grid-row:11/13;
+		}
+		.hs11 {
+			grid-column: 44/46;
+			grid-row:13/15;
+		}
+		.hs12 {
+			grid-column: 44/46;
+			grid-row:15/17;
+		}
+		.hs13 {
+			grid-column: 44/46;
+			grid-row:17/19;
+		}
+		.hs14 {
+			grid-column: 44/46;
+			grid-row:19/21;
+		}
+		.hs15 {
+			grid-column: 44/46;
+			grid-row:21/23;
+		}
+		.hs16 {
+			grid-column: 44/46;
+			grid-row:23/25;
+		}
+		.hs17 {
+			grid-column: 44/46;
+			grid-row:25/27;
+		}
+		.hs18 {
+			grid-column: 44/46;
+			grid-row:27/29;
+		}
+		.hs19 {
+			grid-column: 44/46;
+			grid-row:29/31;
+		}
+		.hs20 {
+			grid-column: 44/46;
+			grid-row:31/33;
+		}
+		.hs21 {
+			grid-column: 44/46;
+			grid-row:33/35;
+		}
+		.hs22 {
+			grid-column: 44/46;
+			grid-row:35/37;
+		}
+		.hs23 {
+			grid-column: 44/46;
+			grid-row:37/39;
+		}
+
+		.l-6 {
+			grid-column: 2/8;
+			grid-row: 3/5;
+		}
+
+		.l-7 {
+			grid-column: 2/8;
+			grid-row: 5/7;
+		}
+		.l-8 {
+			grid-column: 2/8;
+			grid-row: 7/9;
+		}
+		.l-9 {
+			grid-column: 2/8;
+			grid-row: 9/11;
+		}
+		.l-10 {
+			grid-column: 2/8;
+			grid-row: 11/13;
+		}
+		.l-11 {
+			grid-column: 2/8;
+			grid-row: 13/15;
+		}
+		.l-12 {
+			grid-column: 2/8;
+			grid-row: 15/17;
+		}
+		.l-13 {
+			grid-column: 2/8;
+			grid-row: 17/19;
+		}
+		.l-14 {
+			grid-column: 2/8;
+			grid-row: 19/21;
+		}
+		.l-15 {
+			grid-column: 2/8;
+			grid-row: 21/23;
+		}
+		.l-16 {
+			grid-column: 2/8;
+			grid-row: 23/25;
+		}
+		.l-17 {
+			grid-column: 2/8;
+			grid-row: 25/27;
+		}
+		.l-18 {
+			grid-column: 2/8;
+			grid-row: 27/29;
+		}
+		.l-19 {
+			grid-column: 2/8;
+			grid-row: 29/31;
+		}
+		.l-20 {
+			grid-column: 2/8;
+			grid-row: 31/33;
+		}
+		.l-21 {
+			grid-column: 2/8;
+			grid-row: 33/35;
+		}
+		.l-22 {
+			grid-column: 2/8;
+			grid-row: 35/37;
+		}
+		.l-23 {
+			grid-column: 2/8;
+			grid-row: 37/39;
+		}
+
+		.m-6 {
+			grid-column: 8/14;
+			grid-row: 3/5;
+		}
+
+		.m-7 {
+			grid-column: 8/14;
+			grid-row: 5/7;
+		}
+		.m-8 {
+			grid-column: 8/14;
+			grid-row: 7/9;
+		}
+		.m-9 {
+			grid-column: 8/14;
+			grid-row: 9/11;
+		}
+		.m-10 {
+			grid-column: 8/14;
+			grid-row: 11/13;
+		}
+		.m-11 {
+			grid-column: 8/14;
+			grid-row: 13/15;
+		}
+		.m-12 {
+			grid-column: 8/14;
+			grid-row: 15/17;
+		}
+		.m-13 {
+			grid-column: 8/14;
+			grid-row: 17/19;
+		}
+		.m-14 {
+			grid-column: 8/14;
+			grid-row: 19/21;
+		}
+		.m-15 {
+			grid-column: 8/14;
+			grid-row: 21/23;
+		}
+		.m-16 {
+			grid-column: 8/14;
+			grid-row: 23/25;
+		}
+		.m-17 {
+			grid-column: 8/14;
+			grid-row: 25/27;
+		}
+		.m-18 {
+			grid-column: 8/14;
+			grid-row: 27/29;
+		}
+		.m-19 {
+			grid-column: 8/14;
+			grid-row: 29/31;
+		}
+		.m-20 {
+			grid-column: 8/14;
+			grid-row: 31/33;
+		}
+		.m-21 {
+			grid-column: 8/14;
+			grid-row: 33/35;
+		}
+		.m-22 {
+			grid-column: 8/14;
+			grid-row: 35/37;
+		}
+		.m-23 {
+			grid-column: 8/14;
+			grid-row: 37/39;
+		}
+
+		.x-6 {
+			grid-column: 14/20;
+			grid-row: 3/5;
+		}
+
+		.x-7 {
+			grid-column: 14/20;
+			grid-row: 5/7;
+		}
+		.x-8 {
+			grid-column: 14/20;
+			grid-row: 7/9;
+		}
+		.x-9 {
+			grid-column: 14/20;
+			grid-row: 9/11;
+		}
+		.x-10 {
+			grid-column: 14/20;
+			grid-row: 11/13;
+		}
+		.x-11 {
+			grid-column: 14/20;
+			grid-row: 13/15;
+		}
+		.x-12 {
+			grid-column: 14/20;
+			grid-row: 15/17;
+		}
+		.x-13 {
+			grid-column: 14/20;
+			grid-row: 17/19;
+		}
+		.x-14 {
+			grid-column: 14/20;
+			grid-row: 19/21;
+		}
+		.x-15 {
+			grid-column: 14/20;
+			grid-row: 21/23;
+		}
+		.x-16 {
+			grid-column: 14/20;
+			grid-row: 23/25;
+		}
+		.x-17 {
+			grid-column: 14/20;
+			grid-row: 25/27;
+		}
+		.x-18 {
+			grid-column: 14/20;
+			grid-row: 27/29;
+		}
+		.x-19 {
+			grid-column: 14/20;
+			grid-row: 29/31;
+		}
+		.x-20 {
+			grid-column: 14/20;
+			grid-row: 31/33;
+		}
+		.x-21 {
+			grid-column: 14/20;
+			grid-row: 33/35;
+		}
+		.x-22 {
+			grid-column: 14/20;
+			grid-row: 35/37;
+		}
+		.x-23 {
+			grid-column: 14/20;
+			grid-row: 37/39;
+		}
+
+		.j-6 {
+			grid-column: 20/26;
+			grid-row: 3/5;
+		}
+
+		.j-7 {
+			grid-column: 20/26;
+			grid-row: 5/7;
+		}
+		.j-8 {
+			grid-column: 20/26;
+			grid-row: 7/9;
+		}
+		.j-9 {
+			grid-column: 20/26;
+			grid-row: 9/11;
+		}
+		.j-10 {
+			grid-column: 20/26;
+			grid-row: 11/13;
+		}
+		.j-11 {
+			grid-column: 20/26;
+			grid-row: 13/15;
+		}
+		.j-12 {
+			grid-column: 20/26;
+			grid-row: 15/17;
+		}
+		.j-13 {
+			grid-column: 20/26;
+			grid-row: 17/19;
+		}
+		.j-14 {
+			grid-column: 20/26;
+			grid-row: 19/21;
+		}
+		.j-15 {
+			grid-column: 20/26;
+			grid-row: 21/23;
+		}
+		.j-16 {
+			grid-column: 20/26;
+			grid-row: 23/25;
+		}
+		.j-17 {
+			grid-column: 20/26;
+			grid-row: 25/27;
+		}
+		.j-18 {
+			grid-column: 20/26;
+			grid-row: 27/29;
+		}
+		.j-19 {
+			grid-column: 20/26;
+			grid-row: 29/31;
+		}
+		.j-20 {
+			grid-column: 20/26;
+			grid-row: 31/33;
+		}
+		.j-21 {
+			grid-column: 20/26;
+			grid-row: 33/35;
+		}
+		.j-22 {
+			grid-column: 20/26;
+			grid-row: 35/37;
+		}
+		.j-23 {
+			grid-column: 20/26;
+			grid-row: 37/39;
+		}
+
+		.v-6 {
+			grid-column: 26/32;
+			grid-row: 3/5;
+		}
+
+		.v-7 {
+			grid-column: 26/32;
+			grid-row: 5/7;
+		}
+		.v-8 {
+			grid-column: 26/32;
+			grid-row: 7/9;
+		}
+		.v-9 {
+			grid-column: 26/32;
+			grid-row: 9/11;
+		}
+		.v-10 {
+			grid-column: 26/32;
+			grid-row: 11/13;
+		}
+		.v-11 {
+			grid-column: 26/32;
+			grid-row: 13/15;
+		}
+		.v-12 {
+			grid-column: 26/32;
+			grid-row: 15/17;
+		}
+		.v-13 {
+			grid-column: 26/32;
+			grid-row: 17/19;
+		}
+		.v-14 {
+			grid-column: 26/32;
+			grid-row: 19/21;
+		}
+		.v-15 {
+			grid-column: 26/32;
+			grid-row: 21/23;
+		}
+		.v-16 {
+			grid-column: 26/32;
+			grid-row: 23/25;
+		}
+		.v-17 {
+			grid-column: 26/32;
+			grid-row: 25/27;
+		}
+		.v-18 {
+			grid-column: 26/32;
+			grid-row: 27/29;
+		}
+		.v-19 {
+			grid-column: 26/32;
+			grid-row: 29/31;
+		}
+		.v-20 {
+			grid-column: 26/32;
+			grid-row: 31/33;
+		}
+		.v-21 {
+			grid-column: 26/32;
+			grid-row: 33/35;
+		}
+		.v-22 {
+			grid-column: 26/32;
+			grid-row: 35/37;
+		}
+		.v-23 {
+			grid-column: 26/32;
+			grid-row: 37/39;
+		}
+
+		.s-6 {
+			grid-column: 32/38;
+			grid-row: 3/5;
+		}
+
+		.s-7 {
+			grid-column: 32/38;
+			grid-row: 5/7;
+		}
+		.s-8 {
+			grid-column: 32/38;
+			grid-row: 7/9;
+		}
+		.s-9 {
+			grid-column: 32/38;
+			grid-row: 9/11;
+		}
+		.s-10 {
+			grid-column: 32/38;
+			grid-row: 11/13;
+		}
+		.s-11 {
+			grid-column: 32/38;
+			grid-row: 13/15;
+		}
+		.s-12 {
+			grid-column: 32/38;
+			grid-row: 15/17;
+		}
+		.s-13 {
+			grid-column: 32/38;
+			grid-row: 17/19;
+		}
+		.s-14 {
+			grid-column: 32/38;
+			grid-row: 19/21;
+		}
+		.s-15 {
+			grid-column: 32/38;
+			grid-row: 21/23;
+		}
+		.s-16 {
+			grid-column: 32/38;
+			grid-row: 23/25;
+		}
+		.s-17 {
+			grid-column: 32/38;
+			grid-row: 25/27;
+		}
+		.s-18 {
+			grid-column: 32/38;
+			grid-row: 27/29;
+		}
+		.s-19 {
+			grid-column: 32/38;
+			grid-row: 29/31;
+		}
+		.s-20 {
+			grid-column: 32/38;
+			grid-row: 31/33;
+		}
+		.s-21 {
+			grid-column: 32/38;
+			grid-row: 33/35;
+		}
+		.s-22 {
+			grid-column: 32/38;
+			grid-row: 35/37;
+		}
+		.s-23 {
+			grid-column: 32/38;
+			grid-row: 37/39;
+		}
+
+		.d-6 {
+			grid-column: 38/44;
+			grid-row: 3/5;
+		}
+
+		.d-7 {
+			grid-column: 38/44;
+			grid-row: 5/7;
+		}
+		.d-8 {
+			grid-column: 38/44;
+			grid-row: 7/9;
+		}
+		.d-9 {
+			grid-column: 38/44;
+			grid-row: 9/11;
+		}
+		.d-10 {
+			grid-column: 38/44;
+			grid-row: 11/13;
+		}
+		.d-11 {
+			grid-column: 38/44;
+			grid-row: 13/15;
+		}
+		.d-12 {
+			grid-column: 38/44;
+			grid-row: 15/17;
+		}
+		.d-13 {
+			grid-column: 38/44;
+			grid-row: 17/19;
+		}
+		.d-14 {
+			grid-column: 38/44;
+			grid-row: 19/21;
+		}
+		.d-15 {
+			grid-column: 38/44;
+			grid-row: 21/23;
+		}
+		.d-16 {
+			grid-column: 38/44;
+			grid-row: 23/25;
+		}
+		.d-17 {
+			grid-column: 38/44;
+			grid-row: 25/27;
+		}
+		.d-18 {
+			grid-column: 38/44;
+			grid-row: 27/29;
+		}
+		.d-19 {
+			grid-column: 38/44;
+			grid-row: 29/31;
+		}
+		.d-20 {
+			grid-column: 38/44;
+			grid-row: 31/33;
+		}
+		.d-21 {
+			grid-column: 38/44;
+			grid-row: 33/35;
+		}
+		.d-22 {
+			grid-column: 38/44;
+			grid-row: 35/37;
+		}
+		.d-23 {
+			grid-column: 38/44;
+			grid-row: 37/39;
+		}
+		.l, .m, .x, .j, .v, .s, .d {
+			background-color: #000;
+			border: 1px solid #222;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.txt1 {
+			background: #191717;
+			border: 1px solid #222;
+			color: #666;
+			text-align: center;
+			font-size: 1.1vw;
+			line-height: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.txt {
+			text-align: center;
+			font-size: 1vw;
+			line-height: 1;
+			font-family: 'Noto Sans', sans-serif;
+		}
+		/*.level {
+			grid-column: 1/2;
+			grid-row: 3/39;
+			background: #000;
+			border: 1px solid #222;
+		}*/
+
+		.level-red-up {
+			grid-column: 1/2;
+			grid-row: 3/9;
+			background: #500;
+			border: 1px solid #222;
+		}
+		.level-orange-up {
+			grid-column: 1/2;
+			grid-row: 9/17;
+			background: #740;
+			border: 1px solid #222;
+		}
+		.level-green {
+			grid-column: 1/2;
+			grid-row: 17/29;
+			background: #050;
+			border: 1px solid #222;
+		}
+		.level-orange-under {
+			grid-column: 1/2;
+			grid-row: 29/35;
+			background: #740;
+			border: 1px solid #222;
+		}
+		.level-red-under {
+			grid-column: 1/2;
+			grid-row: 35/39;
+			background: #500;
+			border: 1px solid #222;
+		}
+		.datetable-message {
+			color: #0C0;
+			display: block;
+			margin-bottom: 1vh;
+			/*font-size: 1.3vh;*/
+			font-size: 2.5vw;
+		}
+
+	.embed-0 {
+		display: flex;
+	}
+/*---------------------FOOTER----------------------*/
+	.footer {
+		flex-basis: 100vw;
+		height: 8vh;
+		background:#191717;
+		border-top: #222 solid 5px;
+	}
+
+
+
+
+
+
+
+/*-----------KEYFRAMES-----------------*/
+@keyframes color-point-green {
+	0% {background: #000;}
+	100%{background: #0F0;}
+}
+@keyframes color-point-darkgreen {
+	0% {background: #000;}
+	100%{background: #073;}
+}
+@keyframes color-point-white {
+	0% {background: #000;}
+	100%{background: #AAA;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------- HORIZONTAL --------------------*/
+	@media screen and (min-width:750px){
+		.aside {
+			flex-basis: 5%;
+			/*transition: flex-basis 290ms ease;*/
+		}
+		/*.aside:hover {
+			flex-basis: 10%;
+			transition: flex-basis 190ms ease;
+		}*/
+
+	}
+	@media screen and (min-width: 0) and (max-width:1000px) {
+		.dev-web__core-courses-css-h4, .dev-web__core-courses-html-h4, .dev-web__core-courses-js-h4, .dev-web__core-courses-php-h4, .dev-web__core-articles-css-h4, .dev-web__core-articles-html-h4, .dev-web__core-articles-js-h4, .dev-web__core-articles-php-h4, .dev-web__framework-courses-css-h4, .dev-web__framework-courses-html-h4, .dev-web__framework-courses-js-h4, .dev-web__framework-courses-php-h4, .dev-web__framework-articles-css-h4, .dev-web__framework-articles-html-h4, .dev-web__framework-articles-js-h4, .dev-web__framework-articles-php-h4 , .dev-web__libraries-courses-css-h4, .dev-web__libraries-courses-html-h4, .dev-web__libraries-courses-js-h4, .dev-web__libraries-courses-php-h4, .dev-web__libraries-articles-css-h4, .dev-web__libraries-articles-html-h4, .dev-web__libraries-articles-js-h4, .dev-web__libraries-articles-php-h4, .dev-web__others-courses-css-h4, .dev-web__others-courses-html-h4, .dev-web__others-courses-js-h4, .dev-web__others-courses-php-h4, .dev-web__others-articles-css-h4, .dev-web__others-articles-html-h4, .dev-web__others-articles-js-h4, .dev-web__others-articles-php-h4{
+			/*font-size: 2vh;*/
+		}
+		.extra {
+			flex-basis: 100%;
+		}
+		.extra2 {
+			display: none;
+		}
+		.coursescorecsslink, .coursescorehtmllink, .coursescorejslink, .coursescorephplink, .articlescorecsslink, .articlescorehtmllink, .articlescorejslink, .articlescorephplink, .coursesframeworkcsslink, .coursesframeworkhtmllink, .coursesframeworkjslink, .coursesframeworkphplink, .articlesframeworkcsslink, .articlesframeworkhtmllink, .articlesframeworkjslink, .articlesframeworkphplink, .courseslibrariescsslink, .courseslibrarieshtmllink, .courseslibrariesjslink, .courseslibrariesphplink, .articleslibrariescsslink, .articleslibrarieshtmllink, .articleslibrariesjslink, .articleslibrariesphplink, .coursesotherscsslink, .coursesothershtmllink, .coursesothersjslink, .coursesothersphplink, .articlesotherscsslink, .articlesothershtmllink, .articlesothersjslink, .articlesothersphplink {
+			border-right: none;
+		}
+	}
+
+	@media screen and (min-width: 0) and (max-width:300px) {
+		.dev-web__core-courses-css-h4, .dev-web__core-courses-html-h4, .dev-web__core-courses-js-h4, .dev-web__core-courses-php-h4, .dev-web__core-articles-css-h4, .dev-web__core-articles-html-h4, .dev-web__core-articles-js-h4, .dev-web__core-articles-php-h4, .dev-web__framework-courses-css-h4, .dev-web__framework-courses-html-h4, .dev-web__framework-courses-js-h4, .dev-web__framework-courses-php-h4, .dev-web__framework-articles-css-h4, .dev-web__framework-articles-html-h4, .dev-web__framework-articles-js-h4, .dev-web__framework-articles-php-h4 , .dev-web__libraries-courses-css-h4, .dev-web__libraries-courses-html-h4, .dev-web__libraries-courses-js-h4, .dev-web__libraries-courses-php-h4, .dev-web__libraries-articles-css-h4, .dev-web__libraries-articles-html-h4, .dev-web__libraries-articles-js-h4, .dev-web__libraries-articles-php-h4, .dev-web__others-courses-css-h4, .dev-web__others-courses-html-h4, .dev-web__others-courses-js-h4, .dev-web__others-courses-php-h4, .dev-web__others-articles-css-h4, .dev-web__others-articles-html-h4, .dev-web__others-articles-js-h4, .dev-web__others-articles-php-h4{
+			/*font-size: 5em;*/
+		}
+	}
+	@media (orientation: landscape) {
+		.datetable-message {
+			display: none;
+		}
+	}
+
+
+	a {
+		text-decoration: none;
+	}
+
+
+

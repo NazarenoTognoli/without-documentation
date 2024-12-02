@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<!---------HEAD----------------------------------------->
+ <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Manager Eternal</title>
+	<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/tools/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/tools/tool.css">
+		<link rel="stylesheet" type="text/css" href="css/body/header.css">
+		<link rel="stylesheet" type="text/css" href="css/body/aside.css">
+		<link rel="stylesheet" type="text/css" href="css/body/main.css">
+		<link rel="stylesheet" type="text/css" href="css/asideDisplay/globalClasses.css">
+		<link rel="stylesheet" type="text/css" href="css/asideDisplay/phrase.css">
+		<link rel="stylesheet" type="text/css" href="css/body/timetable.css">
+		<link rel="stylesheet" type="text/css" href="css/body/footer.css">
+		<link rel="stylesheet" type="text/css" href="css/tools/linkermodifier.css">
+		<link rel="stylesheet" type="text/css" href="css/tools/responsiveandfonts.css">
+	<link rel="icon" type="icon" href="sources/img/githublogo.png">
+ </head>
+<body>
+	<form class="consolebox">
+		<textarea class="console" spellcheck="false" placeholder="type 'list' and press 'enter' to see command reference" rows="99"></textarea>
+		<p class="consolehistory"></p>
+	</form>
+	<div class="boxOfBoxes-desktop">
+	<!-----------HEADER----------------------------->
+			<header class="header">
+				<div class="header__h1">
+					<button class="navtitlebox">
+						<div class="navtitle">
+							<span>M</span>
+							<span>a</span>
+							<span>n</span>
+							<span>a</span>
+							<span>g</span>
+							<span>e</span>
+							<span>r</span>
+							<span>E</span>
+							<span>t</span>
+							<span>e</span>
+							<span>r</span>
+							<span>n</span>
+							<span>a</span>
+							<span>l</span>
+						</div>
+					</button>
+					<div class="header-clippath">
+						<a href="https://codepen.io/" target="_blank" title="codepen"><img class="header__h1-img" src="sources/img/codepen-icon.svg"></img></a>
+						<a href="https://es.stackoverflow.com/" target="_blank" title="stackoverflow"><img class="header__h1-img" src="sources/img/stackoverflowicon.png" title="stackoverflow"></img></a>
+						<a href="https://www.youtube.com/" target="_blank" title="youtube"><img class="header__h1-img youtubeicon" src="sources/img/youtubeicon.svg"></img></a>
+						<a href="https://github.com/" target="_blank" title="github"><img class="header__h1-img" src="sources/img/githublogo.png"></img></a>
+						<a href="https://translate.google.com.ar/" target="_blank" title="translate"><img class="header__h1-img" src="sources/img/googletranslatelogo.svg.png"></img></a>
+						<a href="https://developer.mozilla.org/es/" target="_blank" title="MDN"><img class="header__h1-img" src="sources/img/mdnlogo.png"></img></a>
+						<a href="https://chat.openai.com/chat" target="_blank" title="chatgpt"><img class="header__h1-img" src="sources/img/chatgpt-icon.svg"></img></a>
+						<a href="https://www.notion.so" target="_blank" title="notion"><img class="header__h1-img" src="sources/img/Notion_app_logo.png"></img></a>
+						<a href="https://todoist.com/app/today" target="_blank" title="todoist"><img class="header__h1-img" src="sources/img/todoist.svg"></img></a>
+					</div>
+				</div>
+				<nav class="header__nav">
+					<ul class="header__ul">
+						<li class="header__li"><button id="navtimetable" class="header__button habtn">Timetable</button></li>
+						<li class="header__li"><button id="navmain" class="header__button habtn">Main</button></li>
+					</ul>
+				</nav>
+			</header>
+	<section class="mothersection">	
+			<!--<div class="starsBackground"></div>-->
+	<!-----------ASIDE------------------------------>
+			<aside class="aside">
+			</aside>
+	
+	<!-----------SECTIONS--------------------------->
+
+			<!-------MAIN----------->
+				<main class="display main" >
+					<div class="mainleft">
+						<div class="maintitlebox">
+						<canvas id="cnv" width="30" height="30"></canvas>
+						<script type="text/javascript" src="scripts/cube.js"></script>
+						<p>Web Development</p>
+						</div>
+					</div>
+					<div class="mainright">
+					</div>
+				</main>
+				
+			<!-------DATETABLES----->
+				<section class="display timetable">
+					<div class="datetable-flex-box">
+						<div class="datetable-grid">
+							<!-------Monday-------->
+								<div class="l-6 txt l">Code</div>
+								<div class="l-7 txt l">Code</div>
+								<div class="l-8 txt l">Code</div>
+								<div class="l-9 txt l">Code</div>
+								<div class="l-10 txt l">Coding</div>
+								<div class="l-11 txt l">Coding</div>
+								<div class="l-12 txt l">Code</div>
+								<div class="l-13 txt l">Code</div>
+								<div class="l-14 txt l">Code</div>
+								<div class="l-15 txt l">Code</div>
+								<div class="l-16 txt l">Coding</div>
+								<div class="l-17 txt l">Coding</div>
+								<div class="l-18 txt l">Coding</div>
+								<div class="l-19 txt l">Code</div>
+								<div class="l-20 txt l">Coding</div>
+								<div class="l-21 txt l">Coding</div>
+								<div class="l-22 txt l">Code</div>
+								<div class="l-23 txt l">Code</div>
+							<!-------Tuesday------->
+								<div class="m-6 txt m">Extra-Code</div>
+								<div class="m-7 txt m">Extra-Code</div>
+								<div class="m-8 txt m">Code</div>
+								<div class="m-9 txt m">Code</div>
+								<div class="m-10 txt m">Code</div>
+								<div class="m-11 txt m">Code</div>
+								<div class="m-12 txt m">Code</div>
+								<div class="m-13 txt m">Code</div>
+								<div class="m-14 txt m">Code</div>
+								<div class="m-15 txt m">Code</div>
+								<div class="m-16 txt m">Code</div>
+								<div class="m-17 txt m">Code</div>
+								<div class="m-18 txt m">Code</div>
+								<div class="m-19 txt m">Code</div>
+								<div class="m-20 txt m">Coding</div>
+								<div class="m-21 txt m">Coding</div>
+								<div class="m-22 txt m">Code</div>
+								<div class="m-23 txt m">Code</div>
+							<!-------Wednesday----->
+								<div class="x-6 txt x">Extra-Code</div>
+								<div class="x-7 txt x">Extra-Code</div>
+								<div class="x-8 txt x">Code</div>
+								<div class="x-9 txt x">Code</div>
+								<div class="x-10 txt x">Code</div>
+								<div class="x-11 txt x">Code</div>
+								<div class="x-12 txt x">Code</div>
+								<div class="x-13 txt x">Code</div>
+								<div class="x-14 txt x">Code</div>
+								<div class="x-15 txt x">Code</div>
+								<div class="x-16 txt x">Code</div>
+								<div class="x-17 txt x">Code</div>
+								<div class="x-18 txt x">Code</div>
+								<div class="x-19 txt x">Code</div>
+								<div class="x-20 txt x">Coding</div>
+								<div class="x-21 txt x">Coding</div>
+								<div class="x-22 txt x">Code</div>
+								<div class="x-23 txt x">Code</div>
+							<!-------Thursday------>
+								<div class="j-6 txt j">Extra-Code</div>
+								<div class="j-7 txt j">Extra-Code</div>
+								<div class="j-8 txt j">Code</div>
+								<div class="j-9 txt j">Code</div>
+								<div class="j-10 txt j">Code</div>
+								<div class="j-11 txt j">Code</div>
+								<div class="j-12 txt j">Code</div>
+								<div class="j-13 txt j">Code</div>
+								<div class="j-14 txt j">Code</div>
+								<div class="j-15 txt j">Code</div>
+								<div class="j-16 txt j">Code</div>
+								<div class="j-17 txt j">Code</div>
+								<div class="j-18 txt j">Code</div>
+								<div class="j-19 txt j">Code</div>
+								<div class="j-20 txt j">Coding</div>
+								<div class="j-21 txt j">Coding</div>
+								<div class="j-22 txt j">Code</div>
+								<div class="j-23 txt j">Code</div>
+							<!-------Friday-------->
+								<div class="v-6 txt v">Extra-Code</div>
+								<div class="v-7 txt v">Extra-Code</div>
+								<div class="v-8 txt v">Code</div>
+								<div class="v-9 txt v">Code</div>
+								<div class="v-10 txt v">Coding</div>
+								<div class="v-11 txt v">Coding</div>
+								<div class="v-12 txt v">Code</div>
+								<div class="v-13 txt v">Code</div>
+								<div class="v-14 txt v">Code</div>
+								<div class="v-15 txt v">Code</div>
+								<div class="v-16 txt v">Coding</div>
+								<div class="v-17 txt v">Coding</div>
+								<div class="v-18 txt v">Coding</div>
+								<div class="v-19 txt v">Code</div>
+								<div class="v-20 txt v">Coding</div>
+								<div class="v-21 txt v">Coding</div>
+								<div class="v-22 txt v">Code</div>
+								<div class="v-23 txt v">Code</div>	
+							<!-------Saturday------>
+								<div class="s-6 txt s">Extra-Code</div>
+								<div class="s-7 txt s">Extra-Code</div>
+								<div class="s-8 txt s">Code</div>
+								<div class="s-9 txt s">Code</div>
+								<div class="s-10 txt s">Code</div>
+								<div class="s-11 txt s">Code</div>
+								<div class="s-12 txt s">Code</div>
+								<div class="s-13 txt s">Code</div>
+								<div class="s-14 txt s">Code</div>
+								<div class="s-15 txt s">Code</div>
+								<div class="s-16 txt s">Code</div>
+								<div class="s-17 txt s">Code</div>
+								<div class="s-18 txt s">Code</div>
+								<div class="s-19 txt s">Code</div>
+								<div class="s-20 txt s">Coding</div>
+								<div class="s-21 txt s">Coding</div>
+								<div class="s-22 txt s">Code</div>
+								<div class="s-23 txt s">Code</div>
+							<!-------Sunday-------->
+								<div class="d-6 txt s">Code</div>
+								<div class="d-7 txt s">Code</div>
+								<div class="d-8 txt s">Code</div>
+								<div class="d-9 txt s">Code</div>
+								<div class="d-10 txt s">Code</div>
+								<div class="d-11 txt s">Code</div>
+								<div class="d-12 txt s">Code</div>
+								<div class="d-13 txt s">Code</div>
+								<div class="d-14 txt s">Code</div>
+								<div class="d-15 txt s">Code</div>
+								<div class="d-16 txt s">Code</div>
+								<div class="d-17 txt s">Code</div>
+								<div class="d-18 txt s">Code</div>
+								<div class="d-19 txt s">Code</div>
+								<div class="d-20 txt s">Code</div>
+								<div class="d-21 txt s">Code</div>
+								<div class="d-22 txt s">Code</div>
+								<div class="d-23 txt s">Code</div>
+
+
+
+
+							<div class="lunes txt1">L</div>
+							<div class="martes txt1">M</div>
+							<div class="miercoles txt1">X</div>
+							<div class="jueves txt1">J</div>
+							<div class="viernes txt1">V</div>
+							<div class="sabado txt1">S</div>
+							<div class="domingo txt1">D</div>
+
+							<div class="xi txt1"></div>
+							<div class="hs6 txt1">6</div>
+							<div class="hs7 txt1">7</div>			
+							<div class="hs8 txt1">8</div>					
+							<div class="hs9 txt1">9</div>
+							<div class="hs10 txt1">10</div>
+							<div class="hs11 txt1">11</div>
+							<div class="hs12 txt1">12</div>
+							<div class="hs13 txt1">13</div>
+							<div class="hs14 txt1">14</div>
+							<div class="hs15 txt1">15</div>
+							<div class="hs16 txt1">16</div>
+							<div class="hs17 txt1">17</div>
+							<div class="hs18 txt1">18</div>
+							<div class="hs19 txt1">19</div>
+							<div class="hs20 txt1">20</div>
+							<div class="hs21 txt1">21</div>
+							<div class="hs22 txt1">22</div>
+							<div class="hs23 txt1">23</div>
+
+							<div class="rightside">
+								<b>Code</b>
+								<b>Code - 2 Code per month</b>
+								<b>Code - every sunday</b>
+								<b>Code - when necesary</b>
+							</div>
+							<div class="level-red-up"></div>
+							<div class="level-orange-up"></div>
+							<div class="level-green"></div>
+							<div class="level-orange-under"></div>
+							<div class="level-red-under"></div>
+						</div>
+						<p class="datetable-message">There's not more Datatables Yet - Rotate your Device for a better experience.</p>
+					</div>
+				</section>	
+	</section>	
+	<!-----------FOOTER----------------------------->
+		<footer class="footer">
+		</footer>
+	</div>
+	<script type="text/javascript" src="scripts/generator.js"></script>
+	<script type="text/javascript" src="scripts/generate.js"></script>
+	<script type="text/javascript" src="scripts/displayer.js"></script>
+	<script type="text/javascript" src="scripts/domloaded.js"></script>
+	<script type="text/javascript" src="scripts/tool.js"></script>
+	<script type="text/javascript" src="scripts/consDOMGenCommands.js"></script>
+	<script type="text/javascript" src="scripts/console.js"></script>
+	<script type="text/javascript" src="scripts/animations.js"></script>
+</body>
+</html>

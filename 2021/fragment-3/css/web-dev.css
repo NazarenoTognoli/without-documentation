@@ -1,0 +1,333 @@
+
+body{
+    background-color: rgb(10, 11, 10);
+    position: absolute;
+    filter: brightness(190%);
+    overflow-y: scroll;
+}
+
+/*STARTINGBOX*/
+.starting-box {
+    width: 100vw;
+    height: 5em;
+    font-size: 18px;
+    position: relative;
+    /*background-color: rgb(0,0,0);*/
+    background-image: url(/link/computing/recursos/images/industrialdark3.jpg);
+    background-size: cover;
+    /*background:linear-gradient(to top,rgb(37,37,43),rgb(17, 17, 23),rgb(0,0,15));*/
+}
+.starting-box__ul {
+    padding: 20px 20px;
+    color:rgba(255, 255, 255, 0.1);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.starting-box__li {
+    padding: 0 65px;
+    text-decoration: none;
+    display: flex;
+}
+a:visited {
+    color:rgb(41, 147, 147);
+}
+a:link {
+    color:rgb(43, 221, 43)
+}
+a:hover {
+    color: rgb(108, 107, 107);
+}
+
+/*BOXOFBOXES*/
+.boxofboxes {
+    width: 100vw;
+    display: flex;
+    border-bottom: 5px solid rgb(14,15,14) ;
+    border-top: 5px solid rgb(14,15,14) ;
+    /*justify-content: space-around;*/
+    flex-wrap: wrap;
+}
+.frontend, .backend {
+    width: 50vw;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+.frameworks {
+    display: inline-block;
+    width: 100vw;
+    height: 15em;
+    text-align: center;
+    color: white;
+}
+.title {
+    background-color: black;
+}
+.frontend-boxes {
+    text-align: left;
+    padding: 10px;
+}
+.letter-color {
+    animation: color-letter .01s infinite;
+}
+.frontend-boxes__h3 {
+    font-size: 3vw;
+    background-color: rgb(0, 0, 0,.8);
+}
+.frontend-boxes__h4 {
+    color: red;
+    padding: 5px 0;
+}
+.CSS {
+    display: flex;
+}
+.css-boxes {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+.basic-title, .libraries-title {
+    background-color: #333333;
+    color: #00ff00;
+    text-align: center;
+    display: block;
+}
+.css-courses {
+    border-right: 5px solid #333333 ;
+}
+/*ENDINGBOX*/
+.ending-box {
+    width: 100vw;
+    height: 7em;
+    /*background:linear-gradient(to top,black 5%,rgb(0,0,15) 40%,rgb(37,37,43)95%);*/
+    /*background-color: rgb(0, 0, 0);*/
+    background-image: url(/link/computing/recursos/images/industrialdark3.jpg);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    padding-bottom: 20px;
+    padding: 20px 90px;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 0;
+    margin: 0;
+    font-family:monospace;
+    animation: color-letter .01s infinite;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+.ending-box p {
+    padding: 4px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*KEYFRAMES*/
+/*@keyframes move-ball {
+    0% { clip-path: circle(105px at -100% 50%);}
+    2.5%{clip-path: circle(110px at -90% 50%);}
+    5%{clip-path: circle(100px at -80% 50%);}
+    7.5%{clip-path: circle(110px at -70% 50%);}
+    10%{clip-path: circle(105px at -60% 50%);}
+    12.5%{clip-path: circle(110px at -50% 50%);}
+    15% { clip-path: circle(100px at -40% 50%);}
+    17.5%{clip-path: circle(110px at -30% 50%);}
+    20%{clip-path: circle(105px at -10% 50%);}
+
+    22.5%{clip-path: circle(110px at 10% 50%);}
+    25%{clip-path: circle(100px at 15% 50%);}
+    27.5%{clip-path: circle(110px at 20% 50%);}
+    30% { clip-path: circle(105px at 25% 50%);}
+    32.5%{clip-path: circle(110px at 30% 50%);}
+    35%{clip-path: circle(100px at 35%);}
+    37.5%{clip-path: circle(110px at 40% 50%);}
+    40%{clip-path: circle(105px at 45% 50%);}
+
+    42.5%{clip-path: circle(110px at 46% 50%);}
+    45% { clip-path: circle(100px at 47% 50%);}
+    47.5%{clip-path: circle(110px at 48% 50%);}
+    50%{clip-path: circle(105px at 49% 50%);}
+    50% { clip-path: circle(105px at 50% 50%);}
+    52.5%{clip-path: circle(110px at 48% 50%);}
+    55%{clip-path: circle(100px at 47% 50%);}
+    57.5%{clip-path: circle(110px at 46% 50%);}
+
+    60%{clip-path: circle(105px at 45% 50%);}
+    62.5%{clip-path: circle(110px at 50% 50%);}
+    65% { clip-path: circle(100px at 65% 50%);}
+    67.5%{clip-path: circle(110px at 60% 50%);}
+    70%{clip-path: circle(105px at 70% 50%);}
+    72.5%{clip-path: circle(110px at 80% 50%);}
+    75%{clip-path: circle(100px at 90% 50%);}
+    77.5%{clip-path: circle(110px at 100% 50%);}
+
+    80% { clip-path: circle(105px at 130% 50%);}
+    82.5%{clip-path: circle(110px at 140% 50%);}
+    85%{clip-path: circle(100px at 150% 50%);}
+    87.5%{clip-path: circle(110px at 170% 50%);}
+    90%{clip-path: circle(105px at 190% 50%);}
+    92.5%{clip-path: circle(110px at 200% 50%);}
+    95% { clip-path: circle(100px at 270% 50%);}
+    97.5%{clip-path: circle(110px at 290% 50%);}
+    100%{clip-path: circle(105px at 200% 50%);}
+}*/
+@keyframes move-ball {
+    0% { clip-path: circle(105px at 0% 50%);}
+    2.5%{clip-path: circle(110px at 5% 50%);}
+    5%{clip-path: circle(100px at 10% 50%);}
+    7.5%{clip-path: circle(110px at 15% 50%);}
+    10%{clip-path: circle(105px at 20% 50%);}
+    12.5%{clip-path: circle(110px at 25% 50%);}
+    15% { clip-path: circle(100px at 30% 50%);}
+    17.5%{clip-path: circle(110px at 35% 50%);}
+    20%{clip-path: circle(105px at 40% 50%);}
+    22.5%{clip-path: circle(110px at 45% 50%);}
+    25%{clip-path: circle(100px at 50% 50%);}
+    27.5%{clip-path: circle(110px at 55% 50%);}
+    30% { clip-path: circle(105px at 60% 50%);}
+    32.5%{clip-path: circle(110px at 65% 50%);}
+    35%{clip-path: circle(100px at 70% 50%);}
+    37.5%{clip-path: circle(110px at 75% 50%);}
+    40%{clip-path: circle(105px at 80% 50%);}
+    42.5%{clip-path: circle(110px at 85% 50%);}
+    45% { clip-path: circle(100px at 90% 50%);}
+    47.5%{clip-path: circle(110px at 95% 50%);}
+    50%{clip-path: circle(105px at 100% 50%);}
+
+    50% { clip-path: circle(105px at 100% 50%);}
+    52.5%{clip-path: circle(110px at 95% 50%);}
+    55%{clip-path: circle(100px at 90% 50%);}
+    57.5%{clip-path: circle(110px at 85% 50%);}
+    60%{clip-path: circle(105px at 80% 50%);}
+    62.5%{clip-path: circle(110px at 75% 50%);}
+    65% { clip-path: circle(100px at 70% 50%);}
+    67.5%{clip-path: circle(110px at 65% 50%);}
+    70%{clip-path: circle(105px at 60% 50%);}
+    72.5%{clip-path: circle(110px at 55% 50%);}
+    75%{clip-path: circle(100px at 50% 50%);}
+    77.5%{clip-path: circle(110px at 45% 50%);}
+    80% { clip-path: circle(105px at 40% 50%);}
+    82.5%{clip-path: circle(110px at 35% 50%);}
+    85%{clip-path: circle(100px at 30% 50%);}
+    87.5%{clip-path: circle(110px at 25% 50%);}
+    90%{clip-path: circle(105px at 20% 50%);}
+    92.5%{clip-path: circle(110px at 15% 50%);}
+    95% { clip-path: circle(100px at 10% 50%);}
+    97.5%{clip-path: circle(110px at 5% 50%);}
+    100%{clip-path: circle(105px at 0% 50%);}
+}
+@keyframes move-ball--2 {
+    0% { clip-path: circle(100% at -100% 50%);}
+    2.5%{clip-path: circle(100% at -90% 50%);}
+    5%{clip-path: circle(100% at -80% 50%);}
+    7.5%{clip-path: circle(100% at -70% 50%);}
+    10%{clip-path: circle(100% at -60% 50%);}
+    12.5%{clip-path: circle(100% at -50% 50%);}
+    15% { clip-path: circle(100% at -40% 50%);}
+    17.5%{clip-path: circle(100% at -30% 50%);}
+    20%{clip-path: circle(100% at -20% 50%);}
+    22.5%{clip-path: circle(100% at -10% 50%);}
+    25%{clip-path: circle(100% at 0% 50%);}
+    27.5%{clip-path: circle(100% at 10% 50%);}
+    30% { clip-path: circle(1100%at 20% 50%);}
+    32.5%{clip-path: circle(100% at 30% 50%);}
+    35%{clip-path: circle(100% at 40% 50%);}
+    37.5%{clip-path: circle(100% at 50% 50%);}
+    40%{clip-path: circle(100% at 60% 50%);}
+    42.5%{clip-path: circle(100% at 70% 50%);}
+    45% { clip-path: circle(100% at 80% 50%);}
+    47.5%{clip-path: circle(100% at 90% 50%);}
+    50%{clip-path: circle(100% at 100% 50%);}
+
+    50% { clip-path: circle(100% at 100% 50%);}
+    52.5%{clip-path: circle(100% at 110% 50%);}
+    55%{clip-path: circle(100% at 120% 50%);}
+    57.5%{clip-path: circle(100% at 130% 50%);}
+    60%{clip-path: circle(100% at 140% 50%);}
+    62.5%{clip-path: circle(100% at 150% 50%);}
+    65% { clip-path: circle(100% at 160% 50%);}
+    67.5%{clip-path: circle(100% at 170% 50%);}
+    70%{clip-path: circle(100% at 180% 50%);}
+    72.5%{clip-path: circle(100% at 190% 50%);}
+    75%{clip-path: circle(100% at 200% 50%);}
+    77.5%{clip-path: circle(100% at 210% 50%);}
+    80% { clip-path: circle(100% at 220% 50%);}
+    82.5%{clip-path: circle(100% at 230% 50%);}
+    85%{clip-path: circle(100% at 240% 50%);}
+    87.5%{clip-path: circle(100% at 250% 50%);}
+    90%{clip-path: circle(100% at 260% 50%);}
+    92.5%{clip-path: circle(100% at 270% 50%);}
+    95% { clip-path: circle(100% at 280% 50%);}
+    97.5%{clip-path: circle(100% at 290% 50%);}
+    100%{clip-path: circle(100% at 300% 50%);}
+}
+@keyframes color-letter {
+    0%{color:rgb(248, 248, 248);}
+    20%{color: rgb(31, 248, 31);}
+    40%{color:rgb(0, 162, 86)}
+    60%{color: rgb(4, 106, 38);}
+    80%{color: rgb(5, 41, 5);}
+    100%{color: rgb(0, 0, 0);}
+}
+@keyframes rainbow-background {
+    0% { color: #aaaaaa; }
+    8.333% { color: #333333; }
+    16.667% { color: #11ff00; }
+    25.000% { color: #30ff00; }
+    33.333% { color: #00ff00; }
+    41.667% { color: #00ff80; }
+    50.000% { color: #003300; }
+    58.333% { color: #00ff80; }
+    66.667% { color: #00ff00; }
+    75.000% { color: #30ff00; }
+    83.333% { color: #11ff00; } 
+    91.667% { color: #333333; }
+ 100.00% { color: #aaaaaa; }
+}
+/*FONTS*/
+@font-face {
+    font-family: 'Play';
+    src: url(/recursos/fonts/Play/Play-Regular.ttf);
+}
+@keyframes color-bottom {
+    0%{border-right: 3px solid rgb(248, 248, 248);}
+    20%{border-right: 3px solid  rgb(31, 248, 31);}
+    40%{border-right: 3px solid rgb(0, 162, 86)}
+    60%{border-right: 3px solid  rgb(4, 106, 38);}
+    80%{border-right: 3px solid  rgb(5, 41, 5);}
+    100%{border-right: 3px solid  rgb(0, 0, 0);}
+}
+@keyframes color-bottom-left {
+    0%{border-left: 3px solid rgb(248, 248, 248);}
+    20%{border-left: 3px solid  rgb(31, 248, 31);}
+    40%{border-left: 3px solid rgb(0, 162, 86)}
+    60%{border-left: 3px solid  rgb(4, 106, 38);}
+    80%{border-left: 3px solid  rgb(5, 41, 5);}
+    100%{border-left: 3px solid  rgb(0, 0, 0);}
+}
+
+
+

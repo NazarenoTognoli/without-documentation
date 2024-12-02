@@ -1,0 +1,70 @@
+/*---------------------ASIDE ZONE----- -- - - -- - */
+
+	button {
+  	background: none;
+  	border: 0;
+  	color: inherit;
+  	/* cursor: default; */
+  	font: inherit;
+  	line-height: normal;
+  	overflow: visible;
+  	padding: 0;
+  	-webkit-user-select: none; /* for button */
+   	-webkit-appearance: button; /* for input */
+     	-moz-user-select: none;
+      	-ms-user-select: none;
+	}
+	.aside {
+		flex-basis:13%;
+		/*height: 100%;*/
+		background: #07032b;
+		background: var(--bg1);
+		/*background: var(--bg5);*/
+	 	/*der-right: var(--a-color) solid 2px;*/
+		display: inherit;
+		justify-content: center;
+		align-content: flex-start;
+		flex-wrap: wrap;
+		border-right: solid var(--bg4) 5px;
+		font-size: 60%;
+	}
+	/*.aside:hover {
+		flex-basis: 10%;
+		transition: flex-basis 190ms ease;
+	}*/
+	.aside__button {
+		display: block;
+		width: 70%;
+		height: 2.5em;
+		/*min-height: 6vh;*/
+		background: transparent;
+		margin-top: 12px;
+		color: var(--bg8);
+		font-size: inherit;
+		font-family: 'Orbitron';
+		outline: 1px solid var(--bg8);
+		box-shadow: 0px 0px 5px 1px #40eef7;
+		text-shadow: 0px 0px 5px #40eef7;
+		box-shadow: 0px 0px 5px 1px var(--bg9), 0px 0px 5px 1px var(--bg9), 0px 0px 5px 1px var(--bg9);
+		text-shadow: 0px 0px 5px var(--bg9), 0px 0px 5px var(--bg9), 0px 0px 5px var(--bg9);
+		overflow: hidden;
+	}
+	.aside__button:active{
+		transform: scale(.9);
+		transition: transform 50ms ease;
+	}
+	.aside__button:hover {
+		/*outline: 1.5px solid #FFF;*/
+		/*transform: translateX(.5vw);
+		background:linear-gradient(to right, black 1%, var(--bg4) 50%, black 100%);
+		transition: transform 50ms ease;*/
+		color: #FFF;
+		box-shadow: 0px 0px 15px 1px var(--bg9), 0px 0px 15px 1px var(--bg9), 0px 0px 15px 1px var(--bg9);
+		text-shadow: 0px 0px 15px var(--bg9), 0px 0px 15px var(--bg9), 0px 0px 15px var(--bg9), 0px 0px 15px var(--bg9), 0px 0px 15px var(--bg9), 0px 0px 15px var(--bg9);
+
+	}
+	/*.aside__button:focus {
+		background: var(--bg5);
+		color: var(--txt2);
+		outline-color: var(--txt2);
+	}*/

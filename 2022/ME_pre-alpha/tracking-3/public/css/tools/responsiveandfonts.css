@@ -1,0 +1,87 @@
+/*----------------- HORIZONTAL --------------------*/
+	@media screen and (min-width:750px){
+		.aside {
+			flex-basis: 70px;
+			/*transition: flex-basis 290ms ease;*/
+		}
+		/*.aside:hover {
+			flex-basis: 10%;
+			transition: flex-basis 190ms ease;
+		}*/
+
+	}
+	@media screen and (min-width: 0) and (max-width:1000px) {
+		.devweb__core-courses-css-h4, .devweb__core-courses-html-h4, .devweb__core-courses-js-h4, .devweb__core-courses-php-h4, .devweb__core-articles-css-h4, .devweb__core-articles-html-h4, .devweb__core-articles-js-h4, .devweb__core-articles-php-h4, .devweb__framework-courses-css-h4, .devweb__framework-courses-html-h4, .devweb__framework-courses-js-h4, .devweb__framework-courses-php-h4, .devweb__framework-articles-css-h4, .devweb__framework-articles-html-h4, .devweb__framework-articles-js-h4, .devweb__framework-articles-php-h4 , .devweb__libraries-courses-css-h4, .devweb__libraries-courses-html-h4, .devweb__libraries-courses-js-h4, .devweb__libraries-courses-php-h4, .devweb__libraries-articles-css-h4, .devweb__libraries-articles-html-h4, .devweb__libraries-articles-js-h4, .devweb__libraries-articles-php-h4, .devweb__others-courses-css-h4, .devweb__others-courses-html-h4, .devweb__others-courses-js-h4, .devweb__others-courses-php-h4, .devweb__others-articles-css-h4, .devweb__others-articles-html-h4, .devweb__others-articles-js-h4, .devweb__others-articles-php-h4{
+			/*font-size: 2vh;*/
+		}
+		.extra {
+			flex-basis: 100%;
+		}
+		.extra2 {
+			display: none;
+		}
+		.coursescorecsslink, .coursescorehtmllink, .coursescorejslink, .coursescorephplink, .articlescorecsslink, .articlescorehtmllink, .articlescorejslink, .articlescorephplink, .coursesframeworkcsslink, .coursesframeworkhtmllink, .coursesframeworkjslink, .coursesframeworkphplink, .articlesframeworkcsslink, .articlesframeworkhtmllink, .articlesframeworkjslink, .articlesframeworkphplink, .courseslibrariescsslink, .courseslibrarieshtmllink, .courseslibrariesjslink, .courseslibrariesphplink, .articleslibrariescsslink, .articleslibrarieshtmllink, .articleslibrariesjslink, .articleslibrariesphplink, .coursesotherscsslink, .coursesothershtmllink, .coursesothersjslink, .coursesothersphplink, .articlesotherscsslink, .articlesothershtmllink, .articlesothersjslink, .articlesothersphplink {
+			border-right: none;
+		}
+		.devweb__title {
+			display: none;
+		}
+		.devweb--boxcontainer {
+			flex-basis: 100%;
+		}
+		.phrase {
+			display: none;
+		}
+		.side--boxcontainer {
+			flex-basis: 100%;
+		}
+		.subTech {
+			flex-basis: 100% !important;
+		}
+		.side__switcher-display {
+			width: 12%;
+		}
+		.navtitle {
+			display: none;
+		}
+	}
+
+	@media screen and (min-width: 0) and (max-width:300px) {
+		.devweb__core-courses-css-h4, .devweb__core-courses-html-h4, .devweb__core-courses-js-h4, .devweb__core-courses-php-h4, .devweb__core-articles-css-h4, .devweb__core-articles-html-h4, .devweb__core-articles-js-h4, .devweb__core-articles-php-h4, .devweb__framework-courses-css-h4, .devweb__framework-courses-html-h4, .devweb__framework-courses-js-h4, .devweb__framework-courses-php-h4, .devweb__framework-articles-css-h4, .devweb__framework-articles-html-h4, .devweb__framework-articles-js-h4, .devweb__framework-articles-php-h4 , .devweb__libraries-courses-css-h4, .devweb__libraries-courses-html-h4, .devweb__libraries-courses-js-h4, .devweb__libraries-courses-php-h4, .devweb__libraries-articles-css-h4, .devweb__libraries-articles-html-h4, .devweb__libraries-articles-js-h4, .devweb__libraries-articles-php-h4, .devweb__others-courses-css-h4, .devweb__others-courses-html-h4, .devweb__others-courses-js-h4, .devweb__others-courses-php-h4, .devweb__others-articles-css-h4, .devweb__others-articles-html-h4, .devweb__others-articles-js-h4, .devweb__others-articles-php-h4{
+			/*font-size: 5em;*/
+		}
+	}
+	@media (orientation: landscape) {
+		.datetable-message {
+			display: none;
+		}
+	}
+@media screen and (min-width: 0) and (max-width:440px) {
+		.header-clippath {
+			display: none;
+		}
+}
+
+
+	
+/*--------------------- Font Face ---------------------*/
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('../../sources/font/titilliumweb/TitilliumWeb-Regular.ttf');
+}
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../../sources/font/orbitron/Orbitron-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: 'Major Mono Display';
+  src: url('../../sources/font/majormonodisplay/MajorMonoDisplay-Regular.ttf');
+}
+@font-face {
+	font-family: 'Noto Sans Mono';
+	src: url('../../sources/font/notosansmono/NotoSansMono-VariableFont_wdth,wght.ttf');
+}
+@font-face {
+	font-family: 'Noto Sans SC';
+	src: url('../../sources/font/notosanssc/NotoSansSC-Thin.otf');
+}

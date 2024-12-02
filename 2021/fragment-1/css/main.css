@@ -1,0 +1,249 @@
+
+body{
+    background-color: rgb(10, 11, 10);
+    position: relative;
+    filter: brightness(210%);
+}
+
+/*           STARTINGBOXES       */
+.starting-box {
+    width: 100%;
+    height: 5em;
+    font-size: 18px;
+    position: relative;
+    /*background:linear-gradient(to top,rgb(37,37,43) 1%,rgb(0, 0, 0) 40%);*/
+    background-image: url(/recursos/images/industrialdark3.jpg);
+    background-size: cover;
+}
+.starting-box__ul {
+    padding: 20px 20px;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.starting-box__li {
+    padding: 0 0%;
+    text-decoration: none;
+    display: flex;
+}
+/*            MAINTITLE          */
+.main-title {
+    font-size: .8em;
+    /*animation: rainbow-background .4s infinite;*/
+    font-family: 'Play';
+    height: 3em;
+    animation: color-letter .01s infinite;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    /*background-image: url(/recursos/images/industrialdark3.jpg);
+    background-size: cover;*/
+    /*background:linear-gradient(to top, rgb(0,0,0)0%,rgb(22, 22, 22)50%, rgb(0,0,0)100%);*/
+    background-color: #000;
+    /*background: linear-gradient(to top, rgb(0, 0, 0), rgb(37,37,43));*/
+}
+.main-title__h1 {
+    margin: 0;
+    letter-spacing: 3vw;
+    align-self: center;
+    
+}
+/*            MAINBOXES          */
+.boxofboxes {
+    display: flex;
+    border-bottom: 5px solid rgb(14,15,14) ;
+    border-top: 5px solid rgb(14,15,14) ;
+}
+.main-box-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30em;
+    font-family: verdana;
+    background: linear-gradient(to left,rgb(0,0,0)0%,rgb(23, 23, 31)50%, rgb(0,0,0)100%);
+    border-right: 5px solid rgb(14,15,14);
+}
+.main-links {
+    display: block;
+    height: 70px;
+    width: 140px;
+    margin: 10px;
+    background-color: rgb(0, 0, 0,.2);
+    text-decoration: none;
+    border-left: 2px solid #11ff00;
+    padding-left: 10px;
+}
+.main-links:hover {
+    background:linear-gradient(to right,rgb(0,0,0)0%,transparent)5% ;
+
+}
+.computing-embed {
+    width: 100vw;
+    /*transform: translate(200vw);*/
+}
+/*            ENDINGBOXES        */
+.ending-box {
+    width: 100%;
+    height: 5em;
+    background-image:url(/recursos/images/industrialdark3.jpg);
+    background-size:cover;
+    /*background:linear-gradient(to top, rgb(0, 0, 0) 30%,rgb(0, 0, 0));*/
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    padding-bottom: 20px;
+    padding: 20px 90px;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*          KEYFRAMES           */
+@keyframes move-ball {
+    0% { clip-path: circle(105px at 0% 50%);}
+    2.5%{clip-path: circle(110px at 5% 50%);}
+    5%{clip-path: circle(100px at 10% 50%);}
+    7.5%{clip-path: circle(110px at 15% 50%);}
+    10%{clip-path: circle(105px at 20% 50%);}
+    12.5%{clip-path: circle(110px at 25% 50%);}
+    15% { clip-path: circle(100px at 30% 50%);}
+    17.5%{clip-path: circle(110px at 35% 50%);}
+    20%{clip-path: circle(105px at 40% 50%);}
+    22.5%{clip-path: circle(110px at 45% 50%);}
+    25%{clip-path: circle(100px at 50% 50%);}
+    27.5%{clip-path: circle(110px at 55% 50%);}
+    30% { clip-path: circle(105px at 60% 50%);}
+    32.5%{clip-path: circle(110px at 65% 50%);}
+    35%{clip-path: circle(100px at 70% 50%);}
+    37.5%{clip-path: circle(110px at 75% 50%);}
+    40%{clip-path: circle(105px at 80% 50%);}
+    42.5%{clip-path: circle(110px at 85% 50%);}
+    45% { clip-path: circle(100px at 90% 50%);}
+    47.5%{clip-path: circle(110px at 95% 50%);}
+    50%{clip-path: circle(105px at 100% 50%);}
+
+    50% { clip-path: circle(105px at 100% 50%);}
+    52.5%{clip-path: circle(110px at 95% 50%);}
+    55%{clip-path: circle(100px at 90% 50%);}
+    57.5%{clip-path: circle(110px at 85% 50%);}
+    60%{clip-path: circle(105px at 80% 50%);}
+    62.5%{clip-path: circle(110px at 75% 50%);}
+    65% { clip-path: circle(100px at 70% 50%);}
+    67.5%{clip-path: circle(110px at 65% 50%);}
+    70%{clip-path: circle(105px at 60% 50%);}
+    72.5%{clip-path: circle(110px at 55% 50%);}
+    75%{clip-path: circle(100px at 50% 50%);}
+    77.5%{clip-path: circle(110px at 45% 50%);}
+    80% { clip-path: circle(105px at 40% 50%);}
+    82.5%{clip-path: circle(110px at 35% 50%);}
+    85%{clip-path: circle(100px at 30% 50%);}
+    87.5%{clip-path: circle(110px at 25% 50%);}
+    90%{clip-path: circle(105px at 20% 50%);}
+    92.5%{clip-path: circle(110px at 15% 50%);}
+    95% { clip-path: circle(100px at 10% 50%);}
+    97.5%{clip-path: circle(110px at 5% 50%);}
+    100%{clip-path: circle(105px at 0% 50%);}
+}
+@keyframes color-letter {
+    0%{color:rgb(248, 248, 248);}
+    20%{color: rgb(31, 248, 31);}
+    40%{color:rgb(0, 162, 86)}
+    60%{color: rgb(4, 106, 38);}
+    80%{color: rgb(5, 41, 5);}
+    100%{color: rgb(0, 0, 0);}
+}
+@keyframes rainbow-background {
+    0% { color: #000; }
+    8.333% { color: #ff0000; }
+    16.667% { color: #000; }
+    25.000% { color: #11ff00; }
+    33.333% { color: #000; }
+    41.667% { color: #ff0000; }
+    50.000% { color: #000; }
+    58.333% { color: #11ff00; }
+    66.667% { color: #000; }
+    75.000% { color: #ff0000; }
+    83.333% { color: #000; } 
+    91.667% { color: #11ff00; }
+ 100.00% { color: #000; }
+}
+
+
+/*          FONTFACE            */
+@font-face {
+    font-family: 'Play';
+    src: url(/recursos/fonts/Play/Play-Regular.ttf);
+}
+
+/*          TEXTPROPERTIES       */
+.text {
+    padding: 10px;
+    padding-bottom: 0;
+    margin: 0;
+    font-family:monospace;
+    animation: color-letter .01s infinite;
+}
+
+/*           LINKS               */
+a:link {
+    color:rgb(43, 221, 43)
+}
+a:visited {
+    color:rgb(43, 221, 43)
+
+}
+.starting-box__li a:visited {
+    color:rgb(41, 147, 147);
+}
+a:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+

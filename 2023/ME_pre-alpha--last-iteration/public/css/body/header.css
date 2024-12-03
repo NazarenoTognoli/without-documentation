@@ -1,0 +1,213 @@
+/*---------------------HEADER ZONE - -- - -- - - --*/ 
+
+	.header {
+		flex-basis:100vw; 
+		height: 3em;
+		display: flex;
+		flex-basis: ;flex-wrap: wrap;
+	}
+	.header__h1 {
+		display: flex;
+		width: 100%;
+		height: 60%;
+		position: relative;
+		/*background-color: var(--bg2);*/
+		background: var(--bg1);
+		background: linear-gradient(to top, var(--bg1) 50%, #1f1f2e 50%);
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+		color: rgb(255, 255, 255, .1);
+		align-items: center;
+		letter-spacing: 1.5vw;
+		/*border-top: 19.19px solid var(--bg1);*/
+		overflow-x: hidden;
+		justify-content: space-between;
+	}
+	.header__nav {
+		display: block;
+		width: 100%;
+		position: relative;
+		background: var(--bg4);
+		height: 40%;
+	}
+	.header__ul {
+		display: flex;
+		justify-content: space-around;
+		align-items: center ;
+		height: 100%;
+	}
+	.header__li {
+		display: flex;
+		/*font-size: 1.9vh;*/
+		font-size: .760em;
+		padding: 0 1vw;
+		/*background: #2;*/
+		font-family: 'Noto Sans Mono';
+		letter-spacing: .2vw;
+		color: var(--txt2);
+		background: var(--bg3);
+		flex-basis: 11.5%;
+		justify-content: center;
+		align-items: center;
+		background: linear-gradient(to top, var(--bg4) 1%, var(--bg5) 100%);
+		color: #bbf;
+		border-radius: 8%;
+	}
+	.header__li button {
+		text-shadow: 0px 0px 5px var(--bg9), 0px 0px 5px var(--bg9), 0px 0px 5px var(--bg9);
+	}
+	.header__li:hover {
+		color: #bbf;
+	}
+	.header__li:active {
+		background: linear-gradient(to top, var(--bg5) 1%, var(--bg4) 100%);
+	}
+	.header__li button {
+		flex-basis: 100%;
+	}
+	.header-clippath {
+		display: flex;
+		width: 70%;
+		height: 100%;
+		position: relative;
+		background:var(--bg5);
+		justify-content: flex-end;
+		align-items: center;
+		clip-path: polygon(100% 0, 100% 100%, 0 100%, 2% 50%, 0 0);
+	}
+	.header-clippath a {
+		height: 23.2px;
+		width: 23.2px;
+		display: inherit;
+		margin-right: .5vw;
+		position: relative;
+		z-index: 20;
+		text-decoration: none;
+	}
+	.header__h1-img {
+		flex-basis: 23.2px;
+		height: 23.2px;
+		background: var(--bg4);
+		border: 2px solid var(--bg4);
+		border-radius: 2px;
+		box-shadow: 0px 0px 1px 1px var(--bg9), 0px 0px 2px 1px var(--bg9), 0px 0px 3px 1px var(--bg9), 0px 0px 1px 1px var(--bg9), 0px 0px 2px 1px var(--bg9), 0px 0px 3px 1px var(--bg9), 0px 0px 1px 1px var(--bg9), 0px 0px 2px 1px var(--bg9), 0px 0px 3px 1px var(--bg9);
+	} 
+	.header__h1-img:hover {
+		filter: brightness(150%);
+		box-shadow: 0px 0px 5px 1px var(--bg9), 0px 0px 5px 1px var(--bg9), 0px 0px 4px 1px var(--bg9), 0px 0px 1px 1px var(--bg8), 0px 0px 5px 1px var(--bg9), 0px 0px 5px 1px var(--bg9), 0px 0px 4px 1px var(--bg9);
+	}
+	.youtubeicon {
+		height: 100%;
+		width: 100%;
+	}
+
+	@keyframes neon{
+    to{
+        transform: translate(50%);
+      }
+	}
+.header__h1 form {
+	width: 30%;
+	height: 100%;
+	background: var(--bg8);
+}
+.navtitlebox {
+	width: 30%;
+	height: 100%;
+	background: var(--bg2);
+	clip-path: polygon(95.4% 15%, 99% 50%, 95.4% 85%, 0 85%, 0 15%);
+	transform: scaleX(1.03);
+	transform-origin: left;
+}
+@keyframes glitchnavtitle {
+	0% {
+		color: var(--bg8);
+		text-shadow: none;
+	}
+	50% {
+		color: var(--txt2);
+		text-shadow: 0px 0px 5px var(--bg9), 0px 0px 5px var(--bg9), 0px 0px 5px var(--bg9), 0px 0px 5px var(--bg9), 0px 0px 5px var(--bg9), 0px 0px 5px var(--bg9), 0px 0px 5px var(--bg9), 0px 0px 5px var(--bg9), 0px 0px 5px var(--bg9);
+	}
+	100% {
+		color: var(--bg8);
+		text-shadow: none;	
+	}
+}
+@keyframes meanim {
+	95% {
+		color: var(--txt2);
+		text-shadow: 
+		0px 0px 5px var(--bg9),
+		0px 0px 5px var(--bg9),
+		0px 0px 5px var(--bg9),
+		0px 0px 5px var(--bg9),
+		0px 0px 5px var(--bg9),
+		0px 0px 5px var(--bg9),
+		0px 0px 5px var(--bg9),
+		0px 0px 5px var(--bg9),
+		0px 0px 5px var(--bg9);
+	}
+	96% {
+		color: #fff;
+		text-shadow: 
+		0px 0px 5px var(--bg8),
+		0px 0px 5px var(--bg8),
+		0px 0px 5px var(--bg8),
+		0px 0px 5px var(--bg8),
+		0px 0px 5px var(--bg8),
+		0px 0px 5px var(--bg8),
+		0px 0px 5px var(--bg8),
+		0px 0px 5px var(--bg8),
+		0px 0px 5px var(--bg8);
+	}
+	99% {
+		color: var(--txt2);
+		text-shadow: 
+		0px 0px 5px var(--bg9),
+		0px 0px 5px var(--bg9),
+		0px 0px 5px var(--bg9),
+		0px 0px 5px var(--bg9),
+		0px 0px 5px var(--bg9),
+		0px 0px 5px var(--bg9),
+		0px 0px 5px var(--bg9),
+		0px 0px 5px var(--bg9),
+		0px 0px 5px var(--bg9); 	
+	}
+	100% {
+		color: #fff;
+		text-shadow: 
+		0px 0px 5px var(--bg8),
+		0px 0px 5px var(--bg8),
+		0px 0px 5px var(--bg8),
+		0px 0px 5px var(--bg8),
+		0px 0px 5px var(--bg8),
+		0px 0px 5px var(--bg8),
+		0px 0px 5px var(--bg8),
+		0px 0px 5px var(--bg8),
+		0px 0px 5px var(--bg8);	
+	}
+}
+.navtitle {
+	letter-spacing: 2px;
+	padding-left: 20px;
+	text-align: left;
+	color: var(--txt2);
+	text-shadow: 
+	0px 0px 5px var(--bg9),
+	0px 0px 5px var(--bg9),
+	0px 0px 5px var(--bg9),
+	0px 0px 5px var(--bg9),
+	0px 0px 5px var(--bg9),
+	0px 0px 5px var(--bg9),
+	0px 0px 5px var(--bg9),
+	0px 0px 5px var(--bg9),
+	0px 0px 5px var(--bg9); 
+	font-weight: 400;
+	font-size: .8em;
+	/*animation: meanim 4s ease infinite;*/
+
+}
+.header--active {
+	background: linear-gradient(to top, #1f1f2e 50%, var(--bg1) 50%);
+}

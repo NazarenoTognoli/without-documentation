@@ -1,0 +1,6 @@
+/*---------------------FOOTER----------------------*/
+	.footer {
+		flex-basis: 100vw;
+		background:var(--bg1);
+		border-top: var(--bg4) solid 5px;
+	}

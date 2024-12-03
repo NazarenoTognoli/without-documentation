@@ -1,0 +1,6 @@
+- To be able to test the software you must have node installed
+- Go to the root path /servers/
+- Run node index.js
+- Put the URL in the browser: localhost:5000
+- Put data in the two fields n1 and n2, the data should be displayed in the terminal
+- Press the CLS button in the browser to clear the terminal

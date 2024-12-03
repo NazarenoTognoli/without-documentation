@@ -1,0 +1,1 @@
+# This Project it was first just for practice and along the time turned into a some kind of tool. It is for saving in order external links and local resources working with a command console, that I designed by myself with vanilla javascript. 

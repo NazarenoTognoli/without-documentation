@@ -1,0 +1,279 @@
+:root {
+
+
+
+
+
+
+
+	--bg1: #0a0a0a;
+/*------fondo-marco----------*/
+
+
+
+	--bg2: #0e0e0e;
+	--bg1: #010102;
+	--bg2: #08080e;
+/*------fondo-centro---------*/
+
+
+
+	--bg4: #15151e;
+/*------marco-color----------*/
+
+
+
+	--bg5: #34344c;
+/*-----fondo-secundario------*/
+
+
+
+	--bg7: #080808;
+/*-----colorOscuro-auxiliar--*/
+
+
+
+	--bg8: #809bff;
+/*-----Resaltador-primario---*/
+
+
+
+	--bg9: #2e2f76;
+/*-----Resaltador-secundario-*/
+
+
+
+	--txt1: #34344c;
+/*-----txt-color-1-----------*/
+
+
+
+	--txt2: #ddd;
+/*-----txt-color-2-----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*overflow-y: scroll;
+  scrollbar-width: none; *//* Oculta la barra de desplazamiento en Firefox */
+}
+* {
+	user-select: none;
+}
+html {
+	font-family: 'Noto Sans Mono';
+	/*filter: grayscale(100%);*/
+}
+
+/* All links of alldevweb Sections */
+
+
+.alllinksdevweb {
+	/*height: 3.3em !important;*/
+	/*background: var(--bg5) !important;*/
+}
+.alllinksdevweb div {
+	/*height: 60% !important;
+	flex-basis: 10px !important;*/
+}
+body {
+	background: var(--bg1);
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+/*body::-webkit-scrollbar {
+	width: 0;
+}*/
+.boxOfBoxes-desktop {
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+}
+.mothersection {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	height: 100%;
+}
+/*-------------------- display ZONE ------------------*/
+.display {
+	flex-basis: 100%;
+	height: calc(100vh - 53px);
+	background:#FFF;
+	display: none;
+	position: relative;
+	z-index: 10;
+}
+a {
+	all: unset;
+}
+	.courses__h3, .articles__h3 {
+		font-family: 'Major Mono Display';
+	} /*afecta a devweb y mth */
+
+#devweb__switcher-display button {
+	flex-basis: 100%;
+	height: 33.3%;
+	border-bottom: 1px solid #aaa;
+	color: #aaa;
+	font-size: .7em;
+}
+#devweb__switcher-display button:active {
+	background: #000;
+}
+ 
+
+	.main {
+		display: flex;
+	}
+/*-----------KEYFRAMES-----------------*/
+/* Especial Colors for Link animations */
+:root {
+	--lcw: #2e2f76;
+	--lcv: #762e2e;
+	--lcl: #2e763a;
+}
+
+@keyframes color-point-web {
+	0% {background: var(--bg2);
+	/*box-shadow: 0px 0px 15px 1px var(--lcw);*/
+	box-shadow: none;}
+	100%{background: radial-gradient(circle, #fff 0%, var(--lcw) 100%);
+	box-shadow: 0px 0px 4px 1px var(--lcw), 0px 0px 4px 1px var(--lcw);}
+}
+
+@keyframes color-point-video {
+	0% {background: var(--bg2);
+	box-shadow: none;}
+	100%{background: radial-gradient(circle, #fff 0%, var(--lcv) 100%);
+	box-shadow: 0px 0px 4px 1px var(--lcv), 0px 0px 4px 1px var(--lcv);}
+}
+
+@keyframes color-point-local {
+	0% {background: var(--bg2);
+	box-shadow: none;}
+	100%{background: radial-gradient(circle, #fff 0%, var(--lcl) 100%);
+	box-shadow: 0px 0px 4px 1px var(--lcl), 0px 0px 4px 1px var(--lcl);}
+}
+
+/* static background for links */
+:root {
+	/* web */
+	--lbw: radial-gradient(circle, #fff 0%, var(--lcw) 100%);
+	--lbwb: 0px 0px 4px 1px var(--lcw), 0px 0px 4px 1px var(--lcw);
+	/* video */
+	--lbv: radial-gradient(circle, #fff 0%, var(--lcv) 100%);
+	--lbvb: 0px 0px 4px 1px var(--lcv), 0px 0px 4px 1px var(--lcv);
+	/* local */
+	--lbl: radial-gradient(circle, #fff 0%, var(--lcl) 100%);
+	--lblb: 0px 0px 4px 1px var(--lcl), 0px 0px 4px 1px var(--lcl);
+	/*anims*/
+	--abw: color-point-web .5s infinite;
+	--abv: color-point-video .5s infinite;
+	--abl: color-point-local .5s infinite;
+}
+
+
+/* Link modifier */
+@keyframes linkstate {
+	0% {background: radial-gradient(circle, #fff 0%, var(--bg8) 100%);
+		box-shadow: 0px 0px 15px 1px var(--bg8);}
+	100% {background: #ccc; box-shadow: none;}
+}
+.consolebox {
+	position: absolute;
+	display: none;
+	width: 90vw;
+	height: 99vh;
+	z-index: 100;
+	top: .5%;
+	left: 5%;
+	margin: auto;
+	/*box-shadow: 0px 0px 5px 1px var(--bg9), 0px 0px 5px 1px var(--bg9), 0px 0px 5px 1px var(--bg9);*/
+	border: 1px solid var(--bg8);
+	border: 1px solid var(--bg9);
+}
+@keyframes foco {
+	0% {color: #000; 
+		text-shadow: none;}
+	100% {
+		color: var(--txt2); 
+		text-shadow: 0px 0px 5px var(--phc);}
+}
+.console {
+	background: rgba(0, 0, 0, 1);
+	resize: none;
+	width: 50%;
+	height: 100%;
+	outline: none;
+	color: var(--txt2);
+	color: #fff;
+	/*text-shadow: 0px 0px 5px #40eef7;*/
+	padding: 1%;
+	font-weight: 100;
+	font-size: 1.4em;
+	/*animation: glitchnavtitle 4s ease infinite;*/
+	overflow: auto;
+	border: none;
+}
+:root {
+	--phc: var(--bg8);
+}
+.console::placeholder {
+	color: #fff;
+	text-shadow: 0px 0px 5px var(--phc), 0px 0px 5px var(--phc), 0px 0px 5px var(--phc), 0px 0px 5px var(--phc);
+}
+.consolehistory {
+	display: inherit;
+	width: 50%;
+	height: 100%;
+	background: rgba(0, 0, 0, 1);
+	border-left: 1px solid var(--bg4);
+	font-size: 1.4em;
+	color: var(--txt2);
+	text-shadow: 0px 0px 5px var(--bg8), 0px 0px 5px var(--bg8);
+	padding: 1%;
+	font-weight: 100;
+	overflow: hidden;
+	user-select: text;
+	overflow-y: scroll;
+}
+.starsBackground {
+	position: absolute;
+	display: block;
+}
+@keyframes starAnim {
+	0% {
+		box-shadow: none;
+		background: transparent;	
+	}
+	50% {
+		box-shadow: 0px 0px 5px #fff;
+		background: #fff;	
+	}
+	100% {
+		box-shadow: none;
+		background: transparent;
+	}
+}
+.star {
+	position: absolute;
+	width: 2px;
+	height: 2px;
+	/*box-shadow: 0px 0px 5px #fff;
+	background: #f00;*/
+	transform: rotate(45deg);
+}

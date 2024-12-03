@@ -1,0 +1,192 @@
+/* Estilos para la barra de desplazamiento */
+:root {
+    --background: #090a0a;
+    --primary: #6dbc8e;
+    --primary: #7e73fa;
+    --secondary: #0e1f17;
+    --secondary: #191729;
+    --white: #eee;
+    --divider: #222;
+}
+.scrollbar-custom::-webkit-scrollbar {
+    width: 0; /* Ancho de la barra de desplazamiento */
+    height: 0;
+    background: transparent;
+    z-index: 600;
+    position: absolute;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+    background: transparent; /* Color del fondo de la barra de desplazamiento */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+    background: transparent;
+     /* Color del "thumb" de la barra de desplazamiento */
+}
+
+/*=========== SHARED =============*/
+* {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: var(--white);
+    font-family: monospace;
+    border: none;
+    outline: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+    background: var(--background);
+    width: 100vw;
+    height: 100%;
+}
+#body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, var(--background) 0%, #0c0c0c 30%, #0f0f0f 50% ,#0c0c0c 70%, var(--background) 100%);
+    background: var(--background);
+    overflow-y: auto;
+    position: relative;
+}
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+a {
+    color: inherit;
+    background: inherit;
+    text-decoration: none;
+}
+header {
+    width: 100%;
+    height: 4vw;
+    max-height: 55px;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+/*    outline: 1px solid #555;*/
+    z-index: 200;
+    position: fixed;
+    background: rgba(25, 25, 25, .5);
+    background: rgba(126, 115, 250, .5);
+}
+header > .left-div, header > .right-div {
+    height: 100%;
+    display: inherit;
+}
+main {
+    height: calc(100% - 55px);
+    width: 100%;
+}
+/*=========== RIGHT DIV =============*/
+.right-div {
+    justify-content: flex-end;
+    clip-path: polygon(100% 0%, 100% 100%, 10% 100%, 0 0);
+    background: rgba(0, 0, 0, .3);
+    margin-right: clamp(2px, 6vw, 81.96px);
+    min-width: 100px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-nav {
+    width: 470px;
+    height: 100%;
+    display: inherit;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-button-mobile, .nav-mobile {
+    display: none;
+}
+.header-button-mobile {
+    width: 40px;
+    height: 40px;
+}
+.header-button-mobile > img {
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .header-nav {
+        display: none;
+    }
+    .header-button-mobile, .nav-mobile {
+        display: flex;
+    }
+}
+
+.header-nav > span {
+    height: 30px;
+    width: 80px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-ntent: center;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+.header-nav > span > a {
+    width: 100%;
+    height: 100%;
+    line-height: 1.9;
+}
+.header-nav > span:hover {
+    color: var(--primary);
+}
+#contact-btn {
+    background: var(--secondary);
+    color: var(--primary);
+    outline: 1px solid var(--primary);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: background-color .3s ease, outline-color .3s ease, color .3s ease;
+    width: 90px;
+}
+#contact-btn > a {
+    width: 100%;
+    height: 100%;
+    line-height: 1.9;
+    text-align: center;
+}
+#contact-btn:hover {
+    background: #000;
+    color: #FFF;
+    outline-color: #FFF;
+}
+/*=========== LEFT DIV =============0*/
+.left-div {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-left: clamp(2px, 6vw, 81.96px);
+}
+.left-div > a {
+    width: 8vw;
+    max-width: 110px;
+    height: 100%;
+    clip-path: polygon(100% 0, 82% 100%, 0% 100%, 0% 0%);
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    min-height: 50px;
+}
+.left-div > a > img {
+    height: 4.04vw;;
+    width: 4.04vw;
+    min-height: 50px;
+    min-width: 50px;
+    max-width: 55px;
+    max-height: 55px;
+}

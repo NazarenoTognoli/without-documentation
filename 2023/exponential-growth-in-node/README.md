@@ -1,0 +1,3 @@
+- install modules
+- then run node cycle.js
+- enjoy the calculations in the terminal
